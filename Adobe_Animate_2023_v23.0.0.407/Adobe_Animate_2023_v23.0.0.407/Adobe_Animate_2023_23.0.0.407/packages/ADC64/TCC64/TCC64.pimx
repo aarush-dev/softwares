@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>DFADD965-6F33-4615-AA93-729A91FC8FE6</packageid>
+	<name>TCC64</name>
+	<version>5.8.0.592</version>
+	<target_location>/TCC/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>TCC64</name>
+			<assets_size>6760496</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>CmdCntr</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/TCC/CmdCntr.dll</module_path>
+					<display_name>CmdCntr</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+YWRvYmVfY2Fwcy5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1
+cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRy
+dXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQg
+VHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+
+XEFJRC5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1Np
+Z25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQg
+RzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3Rl
+ZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+XENtZENu
+dHIuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWdu
+YXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0
+IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQg
+Um9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRoPlxWdWxjYW5D
+b250cm9sLmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwv
+U2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3Rl
+ZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVz
+dGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cVnVs
+Y2FuTWVzc2FnZTUuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0
+dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBU
+cnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0
+IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRo
+PlxWdWxjYW5XcmFwcGVyLmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNp
+Z25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNl
+cnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdp
+Q2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbklu
+Zm8+
+</validation_xml>
+				<sig>YHb/lkfxkBOapNeH3vifs2jt5KUakj7NqkPNbB5lp7NklWIA4GEkdSAuwq6ZbtWFQXmD6PEAx9T995HQbtWczRBeKwD7lXKLq8/SwwAa5wlFTuJqpKSYXNbMr61Cehli/cvz6bKA/OmfWbMpDRpvBFmyDCVBwbjoqFVoxASCUVU3DGwgBPCDG2rfasUeBox/8nAuJ4+RMk5QFY9L5uYNOHd4tU3MDHMnm3RRtsDL7VNAUDglty4Y24VDyPlOn3HuvwtidxSCWTrashNbMyjzxn5HtE/b6+2eSjmsJ3dupdLyPUcKuCV6RZq1R+NgZrcrNwAZUPL+/gjqHBPRMBlLejmXFCVx5RGiuTYh+PRARQnofvPTOVsou/bCIXRe+0QBz1puN5Ay028J1Bp+m6buJf/zksXznndAubJe7GlJJcpU5M0y7WLz0m3aKwMMcwZLzyN6EiODZrUGGzUp+7smRJ9Xnv7eAlOcrcBfgUvyP0pDVqNIMaWT96wBeHJwdEyh</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

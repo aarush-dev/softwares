@@ -1,0 +1,17 @@
+<package_installation_info version="2.0">
+	<packageid>A0FB3AF2-425A-4347-87DB-C3488F9FF3DC</packageid>
+	<name>WebFS</name>
+	<version>1.2.0.18</version>
+	<target_location>/Extensions/WebFS/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>WebFS</name>
+			<assets_size>828288</assets_size>
+			<validation_info>
+				<validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48VmFsaWRhdGlvbkluZm8+PEZpbGU+PEluc3RhbGxQYXRoPm5hdGl2ZVx3ZWItZnMuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBFViBDb2RlIFNpZ25pbmcgQ0EgKFNIQTIpe3x9RGlnaUNlcnQgSGlnaCBBc3N1cmFuY2UgRVYgUm9vdCBDQTwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PC9WYWxpZGF0aW9uSW5mbz4=</validation_xml>
+				<sig>FwjTY93ZL6PkGpB0w2gByQgFDEwAeJhChX1o0Ajk1tmgncmSTQ4/CoVYhD7FAjxsPngrtF8/DS5jnpjMJTKC796C90jlhM4qAZDfXe3Yig5sgirjEGvwE3Ej3IK6NwoheDKoO/3VgfQ2wKiMdtY45zVX4UJk7c8RrT8cTwRI3+pBuKAyI8K7YN6pLG5DCRjt0ky6ByMn0WQZlHDAWhkEwr1nzCx0PKWcyswOA6SjFzLO4XHRCCUE79/CmeqWtNiVScVN7BTgP5IshYZksxR1J0IEX+Lkf4BoIyzmBOweRML+9+ZZTEgYeAhO7I6+FJU44cadYBkICgbYQrjcXxu+BFzSAZw9EdCmSYXxZK2gJrBpg0/4Ss3ce6CqUVHl772ykUWZFsN39dRJH2TFuTKS0QPH2xinBPNxYPo60HlW7FP/4qxor5ehkQUmDB+c9kxQ+nR6kX8wEOvDWwHPntDE0dWDU1Qhb1np6KgIkrQyQfFzJ8Lkgf+4Pd3AFfULx0Xg</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

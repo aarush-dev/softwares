@@ -1,0 +1,65 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Picture
+;
+; Simple control.  Draws a picture, but allows for a tint value.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[control]
+id=NFS5.TintedPicture
+description=Tinted Picture
+
+parts=picture,data
+
+name.value=ID_TINTEDPICTURE
+
+states=normal,hidden,selected
+states.flags=0
+size.value=50,150
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=data,picture
+
+[state.selected]
+parts=data,picture
+
+[state.hidden]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff,tint,eratint
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+tint.value=0xFFFFFFFF
+tint.type=COLOR
+tint.flags=0
+eratint.type=INT
+eratint.value=0	
+
+[part.picture]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=pointer.fsh
+shapeIndex.value=0

@@ -1,0 +1,59 @@
+; This is a simple lable control that displays a single line of text.
+;
+; The text for the string is stored in a localized text part.
+; If you just want to do some prototyping type in the text you want to 
+; display and set the Localization menu to display StringID's.
+;
+; Alignment is handled using an Enumeration attiribute in a data part.
+;
+
+[control]
+id=REAL.LABEL
+description=Label
+parts=label,data
+states=normal,hidden
+
+name.value=ID_LABEL
+size.value=label.size.width*2,label.size.height
+size.flags=HIDDEN|READONLY
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=0
+resizeable.flags=HIDDEN|READONLY
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+[state.normal]
+parts=label,data
+
+[state.hidden]
+parts=data
+
+[part.label]
+id=LOCALIZEDTEXT
+pos.value=(0-label.size.width)/2*data.align,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+fontPathName.value=univers8b.ffn
+text.value=Text Here
+stringID.value=IDS_YOUR_STRING
+foreColor.value=0xffffffff
+backColor.value=0x00000000
+
+[part.data]
+id=DATA
+attributes.value=align,transon,transoff,nosize
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+
+align.type=INT
+align.value=0
+nosize.type=INT
+nosize.value=1
+nosize.flags=HIDDEN|READONLY

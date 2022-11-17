@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>64FCF476-9A75-4C92-8195-D285C5A43BAF</packageid>
+	<name>HEX64</name>
+	<version>5.8.0.592</version>
+	<target_location>/HEX/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>HEX64</name>
+			<assets_size>4560400</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>HEX</name>
+					<type>UIX</type>
+					<version>1.0</version>
+					<module_path>/HEX/HEX.dll</module_path>
+					<display_name>HEX</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+QWRvYmUgQ0VGIEhlbHBlci5leGU8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxT
+aWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lD
+ZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGln
+aUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFs
+bFBhdGg+XEhFWC5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1
+cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRy
+dXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQg
+VHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>dVBxeEii7ZXbYScjBx2jdbFLKWW03a7A54OSSFEDmwgzkH6Dsgj6BKQvVFP4aCUYhHD08KJe94ALr91jQJh6KJIr0/+aTukNHg3M0hpkj0dw6ERS68mR3Nmw4FykAcgy/GSBSyKyoSP4pLyIy/IiAnowrT4bH5+ZCfoGjBn1j3XoNwsCDQAtp2oWlPtfkogz80j0iQoTymE/z0Ua0PfdlBLX7ci9QF0QKevxqAQWlwmOqyvIJazWCJFqNfGPq7YWdVeslLbVMzVkxGUCib0IibnNBAHFM36w2WVFhp/ba+XJiGmdCY9d+kCPh3NjW9b/a7kCtzNnx/+XlCJtfYj7SrAF/FrseKmvYarNVLJA1a/RcmAkJXKCcVnRR0C7JuIxvIARmX9KFlGwr8D3P9jh2VCvXCmeFEKlC5Cqvs2Te/LvR/m7DYrzx+eExiM4jogWZ7t0Ze80q9UzM1zWLG/mUMH4GyjFtPw4jky5HRotZubX7cHfx8reHmDkpTCKpvqY</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

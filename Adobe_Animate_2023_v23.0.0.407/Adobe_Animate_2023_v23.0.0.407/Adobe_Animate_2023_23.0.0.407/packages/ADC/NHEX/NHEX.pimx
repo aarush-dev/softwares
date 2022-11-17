@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>5E979483-6448-44A2-A165-2E49CA5350A7</packageid>
+	<name>NHEX</name>
+	<version>5.8.0.592</version>
+	<target_location>/NHEX/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>NHEX</name>
+			<assets_size>528904</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>NHEX</name>
+					<type>UIX</type>
+					<version>1.0</version>
+					<module_path>/NHEX/NHEX.dll</module_path>
+					<display_name>NHEX</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+TkhFWC5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1Np
+Z25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQg
+RzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3Rl
+ZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>QBovLvSXJgw/J51n6uR5oHXOvRJRONU6h80puB+r+RxjsK0sS/idYtwJl9hjs99H8KsUALqqBDF7HaAHrjbcbviPEgg214+sFOBQZPm7CESpxBcpzzkL5UWtpihEs38kDlk1cxA/Ax1akD6UJFs6wwyN25hXDEs3HeuaBiTSmh04dNVhNMwCX1RaJOHKWYH8xJkrfcRGbqTRr1/m6etFrB+OCStERF+7VoU6lHfI8xVVwa4bToV07fZd65+cr1u6Lsu3DYbuT3GXDfYT9z07ItW6rsUpBlb8bXlgxMBqEJ4RHhjAv7xCfgyS0c13TR+rxLiz8LY6DJrhPLZPO8n7nuDtbgT9Vy6yEyACb80VaTHjkpHkahYAjr2Jy4c6NWiO4ygGh4q+emS2blQg9ad8VMXYHejdEk3LixfDP/nKqkthuaORgIx1kyNYWYPz0+XgpIveqYbNhJx7csn5ZTkI6sutk28qH8ILrw5DoNAITFDDhMyhd8TC2bN3nYtdB+SW</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

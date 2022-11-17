@@ -1,0 +1,82 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Hover Picture
+;
+; Simple control.  Draws one picture when the mouse is not over it.  Draws another picture 
+; when the mouse IS over it.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=REAL.HOVER_PICTURE
+description=Hover Picture
+
+parts=data,picture,hover_picture
+
+name.value=ID_HOVERPICTURE
+
+states=normal,hidden,hover,selected
+states.flags=0
+
+size.value=9,150
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=data,picture
+
+[state.hover]
+parts=data,hover_picture
+
+[state.selected]
+parts=data,picture
+
+[state.hidden]
+parts=data
+
+
+[part.picture]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=pointer.fsh
+shapeIndex.value=0
+
+[part.hover_picture]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=pointer.fsh
+shapePathName.screenkey=hoverShapePathName
+shapeIndex.value=picture.shapeIndex
+shapeIndex.flags=HIDDEN|READONLY
+
+
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+
+
+

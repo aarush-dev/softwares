@@ -1,0 +1,65 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Panels
+;
+; A simple rectangle that also takes the name of a lay file.  A lot of the work for this
+; is done through code.  It will load up and display the lay file given.  It will also
+; handle input/output to this "sub-menu".  The main reason for these is to use tabs
+; to quickly switch between many panels. 
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.PANEL
+description=Panel
+
+parts=area,data
+
+name.value=ID_PANEL
+
+states=normal,hidden,selected
+states.flags=0
+
+size.value=100,100
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=area,data
+
+[state.selected]
+parts=area,data
+
+[state.hidden]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=filename,transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+filename.type=STRING
+
+[part.area]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=control.size.width,control.size.height
+size.flags=HIDDEN|READONLY
+color.value=0x8000ff00

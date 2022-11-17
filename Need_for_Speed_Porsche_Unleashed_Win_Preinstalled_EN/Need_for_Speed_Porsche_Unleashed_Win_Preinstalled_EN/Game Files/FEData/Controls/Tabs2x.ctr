@@ -1,0 +1,81 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Tabs (2x)
+;
+; Allows the user to switch between panels by clicking on one of the two tabs.  It
+; takes two panel names which will be used through code to transition between them.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.TABS2x
+description=Tabs (2x)
+
+parts=tab0,tab1,data
+
+name.value=ID_Tabs2x
+
+states=normal,hidden,selected
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=tab0,tab1,data
+
+[state.selected]
+parts=tab0,tab1,data
+
+[state.hidden]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=panelname0,panelname1,numberoftabs,transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+numberoftabs.type=INT
+numberoftabs.value=2
+numberoftabs.flags=HIDDEN|READONLY
+panelname0.type=STRING
+panelname1.type=STRING
+
+[part.tab0]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=stdbtn.fsh
+shapePathName.flags=0
+shapeIndex.value=0
+shapeIndex.flags=0
+
+[part.tab1]
+id=SHAPE
+pos.value=tab0.pos.x+tab0.size.width,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=stdbtn.fsh
+shapePathName.flags=0
+shapeIndex.value=0
+shapeIndex.flags=0

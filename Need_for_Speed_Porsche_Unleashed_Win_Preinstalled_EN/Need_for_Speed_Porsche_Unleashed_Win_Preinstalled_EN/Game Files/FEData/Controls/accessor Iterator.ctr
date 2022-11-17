@@ -1,0 +1,95 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Accessor Iterator
+;
+; For lack of a better name, accessor iterator simply lets you click left and right through 
+; a positionable item.  It is based largely on a slider.  But rather than have a track and a
+; knob, it simply has a string (which is the value of the accessor) and two arrows.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.AccessorIterator
+description=Positionable Accessor Iterator
+
+parts=data,label,decrement_button,increment_button
+
+name.value=ID_ACCESSORITERATOR
+
+states=normal,hidden,selected,disabled
+states.flags=0
+
+size.value=150,9
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=label,decrement_button,increment_button,data
+
+[state.selected]
+parts=label,decrement_button,increment_button,data
+
+[state.hidden]
+parts=data
+
+[state.disabled]
+parts=data
+
+[part.data]
+id=DATA
+attributes.value=accessor,transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+accessor.type=STRING
+accessor.value=Put_Accessor_Value_Here
+
+[part.decrement_button]
+id=SHAPE
+pos.flags=HIDDEN|READONLY
+pos.value=0,0
+size.flags=HIDDEN|READONLY
+shapePathName.value=SliderH.fsh
+shapePathName.flags=HIDDEN|READONLY
+shapeIndex.value=1
+shapeIndex.flags=HIDDEN|READONLY
+
+[part.label]
+id=TEXT
+pos.value=decrement_button.size.width,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+fontPathName.value=univers8b.ffn
+text.value=%data.accessor%
+text.maxlength=32
+text.label=text
+text.key=text
+text.flags=HIDDEN|READONLY
+foreColor.value=0xffffffff
+backColor.value=0x00000000
+
+[part.increment_button]
+id=SHAPE
+pos.flags=HIDDEN|READONLY
+pos.value=control.size.width-increment_button.size.width,0
+size.flags=HIDDEN|READONLY
+shapePathName.value=SliderH.fsh
+shapePathName.flags=HIDDEN|READONLY
+shapeIndex.value=2
+shapeIndex.flags=HIDDEN|READONLY

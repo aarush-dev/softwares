@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>65665F7C-F6D3-4F0F-A8B3-785FCD6C3D37</packageid>
+	<name>RemoteCoreExts</name>
+	<version>5.8.0.592</version>
+	<target_location>/RemoteComponents/RemoteCoreExts/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>RemoteCoreExts</name>
+			<assets_size>3706888</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>NGLWrapper</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/RemoteComponents/RemoteCoreExts/NGLWrapper.dll</module_path>
+					<display_name>NGLWrapper Remote CoreExt</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+TkdMV3JhcHBlci5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1
+cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRy
+dXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQg
+VHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>WY8iwDlVl5wh137Tv4llMqGaXUu587xvrokWoBgKYQrAiTyE9mPiMutQiGX0Kr1lGp6/Acwjk7lfr3QL4Vto2HSSRq8PiYwqiiqPq7BUrGKHykAxHVQW3YSAw43Zf6q3irJlGNQxUvcXlPDxzKSBzxwJBQEuK2q+kOqQhJ+DAFu8VPUigVPaeQXYmLNOlpMSFro+4nnmw41Fa0uQNvYzsAsak+phTDtMyZsCm7wzjyUMdDG9sAUQQaOsQPZ3RuJZoO1VvguoB0k6hTJdDZHS/YS8a22ImIZ4BntEOlwrgimqKsNrrDY6CceZDaDwg7nBWOhHX4thZOQiVP6tH+37qzMGA2fHCIOh3NBdvcMKpwgXV2GNx7N4dcLDM4vgxlDntRDvcpCOMrcn1hrTD2dDQ3O7D+hg5XF56M1qDb7z3e0wQnTAYi7CAKFDNtA5Qc949eafJHFNLcg+8C8n2uGLoM+k7T2MGBQ6ZDpOsYk54hutar8xrWA0/7SfKXix8EOr</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

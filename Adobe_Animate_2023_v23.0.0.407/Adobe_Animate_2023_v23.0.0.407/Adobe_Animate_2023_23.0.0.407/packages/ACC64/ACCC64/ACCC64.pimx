@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>3691E0CA-9940-4DCC-9A3D-2F102933C3BB</packageid>
+	<name>ACCC64</name>
+	<version>5.8.0.592</version>
+	<target_location>/ACC/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>ACCC64</name>
+			<assets_size>9472096</assets_size>
+			<modifiers>
+				<install_modifier>
+					<executable_path>Creative Cloud CustomHook.exe</executable_path>
+					<arguments>
+						<argument>--install=1</argument>
+					</arguments>
+				</install_modifier>
+				<uninstall_modifier>
+					<executable_path>Creative Cloud CustomHook.exe</executable_path>
+					<arguments>
+						<argument>--install=0</argument>
+					</arguments>
+				</uninstall_modifier>
+			</modifiers>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+Q1JDbGllbnQuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJl
+PC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVz
+dGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRy
+dXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRoPlxD
+cmVhdGl2ZSBDbG91ZCBDdXN0b21Ib29rLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+
+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMu
+e3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBD
+QTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxl
+PjxJbnN0YWxsUGF0aD5cQ3JlYXRpdmUgQ2xvdWQgSGVscGVyLmV4ZTwvSW5zdGFsbFBhdGg+PFNp
+Z25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5m
+bz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBT
+SEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+
+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cQ3JlYXRpdmUgQ2xvdWQuZXhlPC9JbnN0YWxsUGF0
+aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1
+cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0
+MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJl
+SW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRoPlxDUkxvZ1RyYW5zcG9ydC5leGU8L0luc3Rh
+bGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNp
+Z25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5n
+IFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWdu
+YXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+XENSV2luZG93c0NsaWVudFNlcnZp
+Y2UuZXhlPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWdu
+YXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0
+IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQg
+Um9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PC9WYWxpZGF0aW9uSW5mbz4=</validation_xml>
+				<sig>oDNQiIUUnARP8EXNc/Js1I9gwCnv44smJw3tG/0bl379BU6dw+YZ1UG4kiSG/VOYoa9M6HYvx1SdvyRhmXEtLf3gPuUZVxgIh2OYjhm0i4MRfOirQ4jzaL2XFEJ8LkkS729KmamresP82ZycUk8x/X5KRzc5f5+DikMkjMWfKPgPTB+GjqrpfxixUppedi4s9xDCTBCyVVlD6gsu7euYFqbgAGXG8B6hkP3T5hs2WuG35WaTkMVtZ1ZC+Fkj/69XwBSR5HVSUe/GhSzg78PfZX7OWBtd9+onA99MGFE8L2r1SK7iOeB4fZkDnjrMhYdA8oXufk782DncuSmbXTuXuoaTqLoVtiCees8ufyzbkjXr4JCzeypvZHjVm6ax+3sKBJQdYicJpaRUtx/sNPily41Md1htoqmCfckDZGfkk4laF/pW68CxaAT21F2rOoa87XJ8MvWTixnc/n7A6sPleyA//gMhLPSPYn2eFHjaGUwaiDm/GOORR1QdevOwUV4q</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

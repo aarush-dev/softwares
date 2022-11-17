@@ -1,0 +1,79 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Animating Picture
+;
+; Simple control.  Draws a picture.  Give it a start and an end shape index and it will
+; animate between them.  Also give it a frames per second.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[control]
+id=NFS5.AnimatingPicture
+description=Animating Picture
+
+parts=picture,data
+
+name.value=ID_ANIMATINGPICTURE
+
+states=normal,hidden,selected
+states.flags=0
+size.value=50,150
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=data,picture
+
+[state.selected]
+parts=data,picture
+
+[state.hidden]
+parts=data
+
+
+
+
+[part.data]
+id=DATA
+attributes.value=start_frame,end_frame,numticks,transon,transoff,mindelay,maxdelay
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+start_frame.type=INT
+start_frame.value=0
+end_frame.type=INT
+end_frame.value=0
+
+numticks.type=INT
+numticks.value=30
+
+mindelay.type=INT
+mindelay.value=0
+maxdelay.type=INT
+maxdelay.value=0
+
+
+[part.picture]
+id=SHAPE
+pos.value=-(picture.size.x/2),-(picture.size.y/2)
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=logoAn.fsh
+shapeIndex.value=data.start_frame
+shapeIndex.flags=HIDDEN|READONLY
+

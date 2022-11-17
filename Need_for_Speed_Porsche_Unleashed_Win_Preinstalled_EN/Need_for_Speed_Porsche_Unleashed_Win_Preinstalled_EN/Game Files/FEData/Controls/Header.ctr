@@ -1,0 +1,67 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Header
+;
+; Used instead of a regular label, but the position and font are standardized and HIDDEN|READONLY
+; so that when production wants the font changed, I don't have to stay overnight.
+;
+; Created by Gary Steinke
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.HEADER
+description=Header Text
+
+parts=label,data
+
+name.value=ID_HEADER
+
+states=normal,hidden
+states.flags=0
+
+size.value=0,0
+size.flags=HIDDEN|READONLY
+moveable.value=0
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos.value=6,4
+pos.label=control.pos
+pos.flags=HIDDEN|READONLY
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=label,data
+
+[state.hidden]
+parts=data
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=HIDDEN|READONLY
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+transoff.flags=HIDDEN|READONLY
+
+[part.label]
+id=LOCALIZEDTEXT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+fontPathName.value=Univers17b.ffn
+fontPathName.flags=HIDDEN|READONLY
+stringID.value=IDS_YOUR_STRING
+foreColor.value=0xffffffff
+foreColor.flags=HIDDEN|READONLY
+backColor.value=0x00000000
+backColor.flags=HIDDEN|READONLY
+

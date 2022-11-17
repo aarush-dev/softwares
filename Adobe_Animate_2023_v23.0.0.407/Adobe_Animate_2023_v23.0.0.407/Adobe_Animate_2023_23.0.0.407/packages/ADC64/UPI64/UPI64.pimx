@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<name>UPI64</name>
+	<packageid>0FC70BFC-3D28-49A4-85E8-0DB5CAFBFDFB</packageid>
+	<version>5.8.0.541</version>
+	<target_location>/RemoteComponents/UPI/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>UPI64</name>
+			<assets_size>26665208</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>UPI</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<module_path>/RemoteComponents/UPI/UPI.dll</module_path>
+					<display_name>UPI BL</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<modifiers>
+				<install_modifier>
+					<executable_path>customhook\UPICustomHook.exe</executable_path>
+					<arguments>
+						<argument>-i</argument>
+					</arguments>
+				</install_modifier>
+				<uninstall_modifier>
+					<executable_path>customhook\UPICustomHook.exe</executable_path>
+					<arguments>
+						<argument>-u</argument>
+					</arguments>
+				</uninstall_modifier>
+			</modifiers>
+			<applet_relationship_info>
+				<applet_relationship_element>
+					<name>UPI</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<relationship>DaemonPanelOf</relationship>
+					<relative_name>C3Container</relative_name>
+					<relative_type>BL</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>8000</relative_order>
+				</applet_relationship_element>
+			</applet_relationship_info>
+			<appsToBeTerminated>
+				<appName>AdobeExtensionsService.exe</appName>
+			</appsToBeTerminated>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+Y3VzdG9taG9va1xVUElDdXN0b21Ib29rLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+
+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMu
+e3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBD
+QTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxl
+PjxJbnN0YWxsUGF0aD5cRXhNYW5Db3JlTGliXEFkb2JlRXh0ZW5zaW9uc1NlcnZpY2UuZXhlPC9J
+bnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBl
+PjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUgU2ln
+bmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDwv
+U2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRoPlxFeE1hbkNvcmVMaWJcQUlE
+LmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0
+dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBD
+b2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJv
+b3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cRXhNYW5Db3Jl
+TGliXEV4TWFuQ29yZUxpYkNvcmVTeW5jNjQuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlw
+ZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIElu
+Yy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIx
+IENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZp
+bGU+PEluc3RhbGxQYXRoPlxFeHRMaWIuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5E
+aWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57
+fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENB
+MXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+
+PEluc3RhbGxQYXRoPlxVbmlmaWVkUGx1Z2luSW5zdGFsbGVyQWdlbnRcQUlELmRsbDwvSW5zdGFs
+bFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2ln
+bmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcg
+UlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25h
+dHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cVW5pZmllZFBsdWdpbkluc3RhbGxl
+ckFnZW50XFVuaWZpZWRQbHVnaW5JbnN0YWxsZXJBZ2VudC5leGU8L0luc3RhbGxQYXRoPjxTaWdu
+YXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+
+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hB
+Mzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwv
+RmlsZT48RmlsZT48SW5zdGFsbFBhdGg+XFVuaWZpZWRQbHVnaW5JbnN0YWxsZXJBZ2VudFxWdWxj
+YW5Db250cm9sLmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVy
+ZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1
+c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBU
+cnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+VW5pZmllZFBsdWdpbkluc3RhbGxlckFnZW50XFZ1bGNhbk1lc3NhZ2U1LmRsbDwvSW5zdGFsbFBh
+dGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0
+dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNB
+NDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVy
+ZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cVVBJLmRsbDwvSW5zdGFsbFBhdGg+PFNp
+Z25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5m
+bz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBT
+SEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+
+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+
+</validation_xml>
+				<sig>MONq/bq9PfPj/XuS5Rfq3minHVuXeGJ8GnGPaTvBxGjwX2VYKiTcE+6S+FNZRqjti3wzIvn1khN5fz3UjDakoFrOQzSlLnjYMujRwqH0Ayx3zcUDokZwiSqFeWDqHEwyZSqxAgs7bwoxZQnnVZdLkNIz6UrUIIpeA58Fwx5K6emvzNg9ANu+u0MyBgrtfQAu/dkqTMVsA+goynPTWUcwm7mPhgnkBkznwPLCEccBuyc4a26TtDb3Vt7NPJ7fDu+uMW+Te+WKq8t7PVlXxown8aIdQKAhhMU9I1UpX72ijgHSz274npCEcUEZZ3e/63nEiEpTjyaveVdYbjl5xutoFYSt0Ydt6Nlh2rNuGfRCjKcZw9zq8O0dAIVt8ImmY9vQ3DA9eNMxostQO3OrMTNOl5hg+Sd723KpO+LgeNVjh7T9vd070BE0qfifqQHs9SRsqDKAX2A2wPGMMxE/qBBFHdWTl+AmNWlbsgXHCGlrLpDxayAVWK7b2uDz2t0Mv+G/</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

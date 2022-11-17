@@ -1,0 +1,119 @@
+/*Fog Color (r,g,b) and Density (%), (%)effect on pixmap*/
+122,100,88,	40,	80,
+
+/*Number of Dynamic Fog Regions*/
+3,
+
+/*Fog Region 1  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+122,100,88,	50,
+85,65,85,	50,
+32,21,10,		70,
+1089,
+1110,
+1150,
+
+/*Fog Region 2  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+0,0,0,		70,
+0,0,0,		90,
+22,11,0,		70,
+1150,
+1180,
+1210,
+
+/*Fog Region 3  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+22,11,0,		70,
+85,65,15,	50,
+122,100,88,	50,
+1210,
+1293,
+1323,
+
+
+/*Cloud Type 0, 1 additive, 2 blend*/
+1,
+
+/*Fog Clouds?*/
+1,
+
+/*Has Lightning?, (%chance per # ticks)*/
+250, 250,
+
+/*Visual Height 100-1000*/
+500,
+
+/*Cloud dome offset*/
+-100, 250,
+
+/*Cloud bright (0-255), Cloud Variance (< bright), Nimbus Effect(%)*/
+226,126,100,
+
+/*WindSpeed (clouds) mph, dir*/
+10,20,
+
+/* Black Horizon  (1=yes & 0=no) */
+0,
+
+/* Mirror Flag */
+1,
+
+/* The radius of the horizon */
+1500,
+
+/* The angle of rotation for the horizon in degrees. */
+0,
+
+/* Has a pixmap */
+1,
+
+/* How high in the air the base of the Gourad shaded area is (world offset). */
+-750,
+
+/* Height of the Gourad shaded area (offset from base) */
+1250,
+
+/* Midpoint of Gourad shaded area (offset from base) */
+735,
+
+/* Top of horizon pixmap (offset from base) */
+960,
+ 
+/* Bottom of horizon pixmap (offset from base) */
+600,
+
+/* r,g,b value at top of Gourad shaded EARTH area */
+132,117,115,
+
+/* r,g,b value at base of Gourad shaded EARTH area */
+132,117,115,
+
+/* r,g,b value at top of Gourad shaded SKY area */
+48,78,78			/*210,150,232,*/
+
+/* r,g,b values for base of Gourad shaded SKY area */
+166,126,49,			/* 255,174,70, at position of sun */
+68,88,88,			/* 86,55,146, at position opposite to sun */
+
+/* weather parameters for track! */
+
+/* type */
+1,
+/* startSlice */
+0,
+/* endSlice */
+0,
+/* fade */
+0,
+/* stayTimeOn  Ticks...*/
+0,
+/* fadeTimeOff Ticks...*/
+0,
+/* stayTimeOff Ticks...*/
+0,
+/* fadeTimeOn Ticks...*/
+0,
+
+/* Ambient Light Percentages (R,G,B) 0-100*/
+80,80,90,
+
+
+

@@ -1,0 +1,58 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Factory Driver Badge
+;
+; A very simple control.  Simply draws a badge
+;
+; Created by Roger Freddi, jan 13,00
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.BADGE
+description=Badge
+
+parts=picture,data
+
+name.value=ID_BADGE
+
+states=normal,hidden
+states.flags=0
+size.value=56,66
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=341,213
+pos.label=control.pos
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=data,picture
+
+[state.hidden]
+parts=data
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+
+[part.picture]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=54,64
+size.flags=HIDDEN|READONLY
+color.value=0xFFBC0000
+color.flags=HIDDEN|READONLY

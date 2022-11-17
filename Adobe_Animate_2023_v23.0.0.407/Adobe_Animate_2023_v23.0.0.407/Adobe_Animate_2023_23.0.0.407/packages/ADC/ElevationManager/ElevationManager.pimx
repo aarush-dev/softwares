@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>987D7F6D-1DA2-4F72-A810-4687A492A2A0</packageid>
+	<name>ElevationManager</name>
+	<version>5.8.0.592</version>
+	<target_location>/ElevationManager/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>ElevationManager</name>
+			<assets_size>2616864</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>ElevationManager</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/ElevationManager/ElevationManager.dll</module_path>
+					<display_name>Elevation Manager</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<modifiers />
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+QWRvYmUgSW5zdGFsbGVyLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNp
+Z25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNl
+cnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdp
+Q2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxs
+UGF0aD5cQWRvYmVTZXJ2aWNlSW5zdGFsbGVyLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5
+cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJ
+bmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAy
+MSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxG
+aWxlPjxJbnN0YWxsUGF0aD5cQWRvYmVVcGRhdGVTZXJ2aWNlLmV4ZTwvSW5zdGFsbFBhdGg+PFNp
+Z25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5m
+bz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBT
+SEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+
+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cRWxldmF0aW9uTWFuYWdlci5kbGw8L0luc3RhbGxQ
+YXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25h
+dHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJT
+QTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWduYXR1
+cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>ZJ+OvVnh3sVemm/knXA1oReQOMl/GijtInl7Przaxoq5KlVXhegdTIjYOYwBSCshBpKiQ1onfElqqo7LZ/O6LvG8mJm0unFbm7StZV70Emttybl1vC86tHQIwK7IRvUmOtkDmNH5YpMxiElvLiZKs5kZn1ftGFtDau5wBdziTvZxmy3D/kbOy2B/dICnEPc9Og7N9VRfOuKcUUxBFhd7Gvpi7yeIm3/V1/HswftuzgciVfAqpjREFZzUhDs5M6F1sVqudt2hUPN9aTJolDAnn9FC/fyAhsM3RIT5nsW/AZNSo3f9fH1aWo6xS9OMP9M7jitNUDk2RcBZVTgwQNOkwUBWF1dz8r7m5vkMulgWvM5tOKo2mVK9qRLgDPvHr0MhG1XfW1BG/OswItYGlmXTvLo0o8ME3M4B8CynExLp2P9y/P2sOvJU08AlSDyUZwhN18Js3FOBmmxXKAXiLZT2nWB06G7xP2rLero1LbVqVit9z+dq/7LSA6rbOYsK7n2L</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>717CA711-D8A6-499B-A910-0CD5C9566FBA</packageid>
+	<name>3DI</name>
+	<version>0.0.1.5625</version>
+	<target_location>/Components/3DI/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>3DI</name>
+			<assets_size>7540897</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvLz4=</validation_xml>
+				<sig>FSD+6Zs299FtzE5DfwbF2A3eOsJX8FQa8ilmwlHCJYgroe/esn6rD0WUcC9kUvLkGYLx+ICSEe2bmjsqO1JCa0Lmy0i508/fJ2Rlx8tcrxKoQk6jCVHgpDzoK7ns5Osl+cHLn/c4k/2/9s/8wNHi9z8Mxvn8Fsyotk470A/CjVaPcP7W2bgAhZhmm77LatMXvLYFBgbBA08hPaTzrsZ4VSXAT4J0U3wLnf1QIAJXfwPhO1wN0wiwuQY/tQ040Z6eoEoFonKjbrkIfc6dVXkQtig54JM8ptWVgDvheSY+8bkOAOZWQCamRrf+zkU/aCNzHmrOJ0DR6JyEOgsP0e4OeaOOJWaG+aaamyB6CwrBvTUXwsYGlGxsJ4z3XkGs0TshhXYINNkahud4FOjwLzqm71vXJhM7xpOGL8Bi11KgNkzSNSSbp/eRF3TXghLiv50DaExbjgEc2M0O8h1Tq6iPJocEvp1DWYz+nbuONbSMzPw5LRM/QCvX9fiJYgCUXgni</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

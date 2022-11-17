@@ -1,0 +1,14 @@
+[text]
+x=230
+y=90
+text=QUIT
+
+
+[button]
+codelink=
+x=230
+y=220
+text=to System
+EnableForDemo=1
+nextmenu=ad
+

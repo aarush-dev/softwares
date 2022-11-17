@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>99A716FB-CED9-4BB1-8E04-A85520333387</packageid>
+	<name>Spaces</name>
+	<version>5.8.0.592</version>
+	<target_location>/Components/Spaces/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Spaces</name>
+			<assets_size>6756980</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvLz4=</validation_xml>
+				<sig>ks1Eaw+oPeRBN1oUAL7lLxlEGu6qmts9fnlvcZqM7iI944rLAhp/s9z0SbrtXHa8lILcb7SK0B47yRZkMeaMTsL/is+H8UV6ERQEzcl/wTbYb8UYhWG7IFnGPuekLnoQ5oSy/kLhD/qQL5lecDHYNTOpbwazlMKpsoj1ChFpE/3LtgJmYmTSrEzfI1F0GbeUapgn9rI7y2aHLWJsFINdeTrs8CWp6kQFHKqZAP1XDYXQ+6JL0sCDOGxYcOHuBcsKGU7daWzkTrgbZXQX3+6IBS9LtiOZi2VfOKGy8FPDwgiEbOqhhl/zH13I1xR02nLNlM3M0gQyNaKztbbC8L3WMD0Q4zHE5pq7oCYTF80ax4j2QYytM86qoZxuBDoMh6OoYN0qC8BFsw7ZYyL0R+cbIDxsghl+ku2sZT9PTFZqpAp5uIV9OW731MpiK4rynaDMhzurHYJ3gaPyQZCy38dTPBJ3bfEUgShVXoDay1e+yGnkXuBBYSc+rF0LPQwdcV9y</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

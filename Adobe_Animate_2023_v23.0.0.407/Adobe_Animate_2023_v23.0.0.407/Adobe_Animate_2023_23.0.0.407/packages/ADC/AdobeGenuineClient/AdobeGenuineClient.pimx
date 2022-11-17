@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>243D8F83-EF59-4943-A7CC-2F4DACC18E41</packageid>
+	<name>AdobeGenuineClient</name>
+	<version>5.8.0.541</version>
+	<target_location>/AdobeGenuineClient/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>AdobeGenuineClient</name>
+			<assets_size>7011840</assets_size>
+			<modifiers>
+				<install_modifier>
+					<executable_path>customhook/gccustomhook</executable_path>
+					<arguments>
+						<argument>--source=ADC</argument>
+						<argument>--workflow=1</argument>
+					</arguments>
+				</install_modifier>
+				<uninstall_modifier>
+					<executable_path>customhook/gccustomhook</executable_path>
+					<arguments>
+						<argument>--source=ADC</argument>
+						<argument>--workflow=4</argument>
+					</arguments>
+				</uninstall_modifier>
+			</modifiers>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+QUdTU2VydmljZS5leGU8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1
+cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IEVW
+IENvZGUgU2lnbmluZyBDQSAoU0hBMil7fH1EaWdpQ2VydCBIaWdoIEFzc3VyYW5jZSBFViBSb290
+IENBPC9TaWduYXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+XGN1c3RvbWhvb2tc
+Z2NjdXN0b21ob29rLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25h
+dHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQg
+RVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNlIEVWIFJv
+b3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjwvVmFsaWRhdGlvbkluZm8+
+</validation_xml>
+				<sig>vrZyLpi21yc1g9JTemIAxm+930j26h9Q61GQvsSsRQHqt5O5Z2Jw3ruZyLxuvdI1UxDz9YaW8YsdqW7t8DOhe5Q5ijyuIeqYmpiCnWHYxxbek7pLk8A5WrbUlXLzAfX/ZB/t3RG2Oy9gP8QVV7uOIasTqrUebtJy10ilofW2Rq56YBG3UQGMh9/Wd3iKvMZnB+VznRnidgf6x7J9i0cCBo+TuXIuAXspqMtjp+P9SVnFgAkvDea23+HHiF3zugvc7dYuzZMR3XGSsb1/lsI/ooaSoOv2RX4oYovNpfdyXZW8ec1Ob9KkkqIcJunI8rMLuhrLNWAbDBAZIVA9rOYDyYHWx217us2bGe4GJlRdy698nnvom4rZEUzXU3Fsi2lNj29WxOebSMiiC/5GPg7GRkBrY3Plb35/kPdKD4Aj2iagEL9eD6tPyMTLJJ0e7O25x5hSeTxHieroeC1ySS65aM6bXUtwsuctM0nQoUJfoarmpTH3xbWzM8HGBd7Fb2Gi</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

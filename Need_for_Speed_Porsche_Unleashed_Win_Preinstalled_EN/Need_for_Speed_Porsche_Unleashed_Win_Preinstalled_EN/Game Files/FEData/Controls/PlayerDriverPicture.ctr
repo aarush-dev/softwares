@@ -1,0 +1,63 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Player Driver Picture 
+;
+; Created by Gary Steinke, Jan 31/0
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[control]
+id=NFS5.PLAYERDRIVERPICTURE
+description=Player Driver Picture
+
+parts=picture,data
+
+name.value=ID_PICTURE
+
+states=normal,hidden,hover
+states.flags=0
+size.value=50,150
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=data,picture
+
+[state.hidden]
+parts=data
+
+[state.hover]
+parts=data,picture
+
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff,ournumber
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+ournumber.type=INT
+
+[part.picture]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=ALLdrivr.fsh
+shapePathName.flags=HIDDEN|READONLY
+shapeIndex.value=data.ournumber
+shapeIndex.flags=HIDDEN|READONLY
+
+

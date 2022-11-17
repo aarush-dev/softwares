@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>3E4B5C39-F03E-4085-B52E-F7CEE8288C1F</packageid>
+	<name>Runtime</name>
+	<version>5.8.0.592</version>
+	<target_location>/Runtime/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Runtime</name>
+			<assets_size>66889280</assets_size>
+			<modifiers>
+				<install_modifier>
+					<executable_path>customhook\RuntimeCustomHook.exe</executable_path>
+					<arguments>
+						<argument>--VC11_win32=1</argument>
+						<argument>--VC11_win64=1</argument>
+						<argument>--VC12_win32=1</argument>
+						<argument>--VC12_win64=1</argument>
+						<argument>--VC14_win32=1</argument>
+						<argument>--VC14_win64=1</argument>
+						<argument>--VC14.1_win32=1</argument>
+						<argument>--VC14.1_win64=1</argument>
+					</arguments>
+				</install_modifier>
+			</modifiers>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+Y3VzdG9taG9va1xSdW50aW1lQ3VzdG9tSG9vay5leGU8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVU
+eXBlPkRpZ2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUg
+SW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIw
+MjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48
+RmlsZT48SW5zdGFsbFBhdGg+XGN1c3RvbWhvb2tcdmMxMlwzMmJpdFx2Y3JlZGlzdF94ODYuZXhl
+PC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVU
+eXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUg
+U2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBH
+NDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRoPlxjdXN0b21ob29rXHZj
+MTJcNjRiaXRcdmNyZWRpc3RfeDY0LmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGln
+aXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9
+RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7
+fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJ
+bnN0YWxsUGF0aD5cY3VzdG9taG9va1x2YzEzXDMyYml0XHZjcmVkaXN0X3g4Ni5leGU8L0luc3Rh
+bGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNp
+Z25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5n
+IFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1c3RlZCBSb290IEc0PC9TaWdu
+YXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+XGN1c3RvbWhvb2tcdmMxM1w2NGJp
+dFx2Y3JlZGlzdF94NjQuZXhlPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2ln
+bmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2Vy
+dCBUcnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lD
+ZXJ0IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQ
+YXRoPlxjdXN0b21ob29rXHZjMTRcMzJiaXRcdmNyZWRpc3RfeDg2LmV4ZTwvSW5zdGFsbFBhdGg+
+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJl
+SW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5
+NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUlu
+Zm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cY3VzdG9taG9va1x2YzE0XDY0Yml0XHZjcmVk
+aXN0X3g2NC5leGU8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1cmU8
+L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRydXN0
+ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQgVHJ1
+c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>aKS0efT4Z5i8nyrZAFXNv/l6CGk6onFuQGsIwt1Uhzz0QDJYGX/75G6JE5x2yJfdlZysufNDfZY0wa/bJkkYZzggBlAwtB6PlwApPnz3o7WJJx5dP/X9F7q6sclX4L37CnT/tQ8CKR2YyP57hZ5ePrnqupTDUpeMiSpfLj58ivrhoZu2h8N/yEZFBvI/P//Ulu9y6fXmpg9SYHKDiRV3aFNP/ryV2Q+kpz+4QI5MldkHDKIO9tkwYkWMRugAtT/m68itGnUenm6fCR9gIusbjml4Fj/ofyrb6QPlF0jawVXgYqRXb6krDixLXYJlxsl/kH3b4aG2+P7F1WUGvdm46B+Dh6EyZVyHKKgSLlTglARoFHvaqkDzrsD4TGvu94Xh3fnZt+K8B004fiJ0EqtGzDemwsZ8/vQ4cN+alhW4/nbjHQuDhNFtLmypqn8LC8Od8iOzXYk2NajTPIRBxxl43wEdUchvkgQsmTXze7FT62Z0FXMk2o1bOP7edshSxq/N</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

@@ -1,0 +1,84 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Movie Control Button
+;
+; Has some built in functionality through the use of a command such as "PLAY", "STOP",
+; "RESTART", and "PAUSE"
+;
+; Created by Gary Steinke, July 5/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.MOVIECONTROLBUTTON
+description=Movie Control Button
+
+parts=bkgd,txt,data
+
+name.value=ID_MOVIECONTROLBUTTON
+
+states=normal,hidden,selected
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=bkgd,txt,data
+
+[state.selected]
+parts=bkgd,txt,data
+
+[state.hidden]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=moviename,buttontype,transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+moviename.type=STRING
+buttontype.type=STRING
+
+[part.bkgd]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=stdbtn.fsh
+shapePathName.flags=0
+shapeIndex.value=0
+shapeIndex.flags=0
+
+[part.txt]
+id=LOCALIZEDTEXT
+pos.value=bkgd.size.width,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+size.value=control.size.width-bkgd.size.width,control.size.height
+fontPathName=HIDDEN|READONLY
+fontPathName.value=univers8b.ffn
+fontPathName.screenkey=hilightFont
+text.flags=HIDDEN|READONLY
+text.value=PutTextHere
+foreColor.value=0xffffffff
+foreColor.screenkey=hilightForeColor
+backColor.value=0x00000000
+backColor.screenkey=hilightBackColor

@@ -1,0 +1,54 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Oval Thing
+;
+; That oval thing that angie wanted.  This is done in the most highly inefficient way that anyone
+; could possibly do it.  But it should work, and that's good enough until I think of a better way.
+;
+; Created by Gary Steinke, July 30/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+[control]
+id=NFS5.OVALTHING
+description=Oval Thing
+
+parts=data
+
+name.value=ID_OVALTHING
+
+states=normal
+states.flags=0
+size.value=0,0
+size.flags=HIDDEN|READONLY
+moveable.value=0
+moveable.flags=HIDDEN|READONLY
+resizeable.value=0
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.flags=HIDDEN|READONLY
+
+autosize.value=0
+autosize.flags=HIDDEN|READONLY
+
+[state.normal]
+parts=data
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff,start,end,nosize
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+start.type=INT
+start.value=0
+end.type=INT
+end.value=53
+
+nosize.type=INT
+nosize.value=1
+nosize.flags=HIDDEN|READONLY

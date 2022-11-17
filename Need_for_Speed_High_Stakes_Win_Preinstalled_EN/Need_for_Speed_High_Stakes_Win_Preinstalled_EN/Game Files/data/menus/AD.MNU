@@ -1,0 +1,106 @@
+[text]
+x=320
+y=47
+text= Game Features
+align=2
+color=4
+EnableForDemo=1
+
+
+[text]
+x=68
+y=67
+text=o 12 Licensed cars with realistic physics
+
+
+[text]
+x=68
+y=87
+text=o 9 Tracks with road traffic
+
+[text]
+x=68
+y=107
+text=o Tournament & Knockout modes
+
+[text]
+x=68
+y=127
+text=o Hot Pursuit - chase or be chased
+
+[text]
+x=68
+y=147
+text=o Realistic cop radio chatter
+
+[text]
+x=68
+y=167
+text=o Up to 8 player Network Racing
+
+[text]
+x=68
+y=187
+text=o Dashboards, night driving,
+
+[text]
+x=100
+y=207
+text= headlights, & weather
+
+[text]
+x=68
+y=227
+text=o Download new cars from the internet
+
+[text]
+x=68
+y=247
+text=o TV-style replays
+
+[text]
+x=68
+y=267
+text=o Voodoo, Voodoo 2, Direct 3D, & Software
+
+[text]
+x=68
+y=287
+text=o Feel the road with Force Feedback
+
+
+[text]
+x=68
+y=307
+text=o For news go to WWW.NeedForSpeed.com
+
+[text]
+x=73
+y=374
+text=Automobili Lamborghini, Diablo SV, Countach
+
+[text]
+x=73
+y=390
+text= 25th and all associated logos are
+
+[text]
+x=73
+y=406
+text=trademarks of Automobili Lamborghini S.p.A.
+
+[button]
+codelink=escape
+x=150
+y=434
+text=Back
+EnableForDemo=1
+
+[button]
+codelink=PSE_QUITTOSYSTEM
+x=390
+y=434
+text=Exit to System
+EnableForDemo=1
+
+

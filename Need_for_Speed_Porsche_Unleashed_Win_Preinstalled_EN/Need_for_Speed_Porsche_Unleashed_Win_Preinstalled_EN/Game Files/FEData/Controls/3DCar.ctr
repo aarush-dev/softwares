@@ -1,0 +1,73 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; 3D Car
+;
+; Draws a 3d Car
+;
+; Created by Gary Steinke, Aug 23/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.3DCAR
+description=3D Car
+
+parts=area,data
+
+name.value=ID_3DCar
+
+states=normal,hidden,hover,focused
+states.flags=0
+
+size.value=100,100
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.focused]
+parts=area,data
+
+[state.normal]
+parts=area,data
+
+[state.hover]
+parts=area,data
+
+[state.hidden]
+parts=data
+
+[part.data]
+id=DATA
+attributes.value=accessor,transon,transoff,positiontype,damage
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+accessor.type=STRING
+accessor.value=zMergedList.Car
+
+positiontype.type=INT
+positiontype.value=0
+
+damage.type=INT
+damage.value=0
+
+
+
+[part.area]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=control.size.width,control.size.height
+size.flags=HIDDEN|READONLY
+color.value=0x8000ff00

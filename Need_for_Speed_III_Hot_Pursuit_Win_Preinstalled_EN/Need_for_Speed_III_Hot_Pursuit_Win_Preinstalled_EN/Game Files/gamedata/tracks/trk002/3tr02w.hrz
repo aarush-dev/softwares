@@ -1,0 +1,185 @@
+/*Fog Color (r,g,b) and Density (%), (%)effect on pixmap*/
+160,180,240,	70,	 70,
+
+/*Number of Dynamic Fog Regions*/
+11,
+
+/*Fog Region 1  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	70,
+160,180,240,	20,
+160,180,240,	5,
+234,
+254,
+274,
+
+/*Fog Region 2  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	5,
+160,180,240,	5,
+160,180,240,	70,
+274,
+300,
+315,
+
+
+/*Fog Region 3  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	70,
+160,180,240,	70,
+160,180,240,	20,
+330,
+331,
+441,
+
+
+/*Fog Region 4  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	20,
+160,180,240,	20,
+160,180,240,	20,
+441,
+480,
+526,
+
+/*Fog Region 5  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	20,
+160,180,240,	20,
+160,180,240,	70,
+526,
+527,
+630,
+
+/*Fog Region 6  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	70,
+160,180,240,	80,
+160,180,240,	80,
+815,
+820,
+825,
+
+/*Fog Region 7  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	80,
+160,180,240,	80,
+160,180,240,	70,
+825,
+830,
+835,
+
+/*Fog Region 8  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	70,
+160,180,240,	80,
+160,180,240,	80,
+845,
+855,
+865,
+
+/*Fog Region 9  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	80,
+160,180,240,	80,
+160,180,240,	70,
+865,
+875,
+885,
+
+/*Fog Region 10  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+160,180,240,	70,
+200,210,240,	90,
+200,210,240,	90,
+900,
+950,
+1000,
+
+/*Fog Region 11  (starting)r,g,b,density,  (apex)r,g,b,density, (ending)r,g,b,density,	beforeslice,centerslice,afterslice*/
+200,210,240,	90,
+200,210,240,	90,
+160,180,240,	70,
+1000,
+1050,
+1100,
+
+
+/*Cloud Type 0, 1 additive, 2 blend*/
+1,
+
+/*Fog Clouds?*/
+1,
+
+/*Has Lightning?, (%chance per # ticks)*/
+0,128,
+
+/*Visual Height 100-1000*/
+1000,
+
+/*Cloud dome offset*/
+-250,  250,
+
+/*Cloud bright (0-255), Cloud Variance (< bright), Nimbus Effect(%)*/
+250,240,85,
+
+/*WindSpeed (clouds) mph, dir*/
+20,180,
+
+/* Black Horizon  (1=yes & 0=no) */
+0,
+
+/* Mirror Flag */
+1,
+
+/* The radius of the horizon */
+1500,
+
+/* The angle of rotation for the horizon in degrees. */
+180,
+
+/* Has a pixmap */
+0,
+
+/* How high in the air the base of the Gourad shaded area is (world offset). */
+-2000,
+
+/* Height of the Gourad shaded area (offset from base) */
+2750,
+
+/* Midpoint of Gourad shaded area (offset from base) */
+2000,
+
+/* Top of horizon pixmap (offset from base) */
+700,
+ 
+/* Bottom of horizon pixmap (offset from base) */
+775,
+
+/* r,g,b value at top of Gourad shaded EARTH area */
+220,200,255,
+
+/* r,g,b value at base of Gourad shaded EARTH area */
+50,50,255,
+
+/* r,g,b value at top of Gourad shaded SKY area */
+30,70,155,
+
+/* r,g,b values for base of Gourad shaded SKY area */
+150,150,200,			/* 237, 166, 59, at position of sun */
+150,150,200,			/* 150, 110, 30, at position opposite to sun */
+
+
+/* weather parameters for track! */
+
+/* type */
+1,
+/* startSlice */
+340,
+/* endSlice */
+240,
+/* fade */
+15,
+/* stayTimeOn  Ticks...*/
+3840,
+/* fadeTimeOff Ticks...*/
+1280,
+/* stayTimeOff Ticks...*/
+1280,
+/* fadeTimeOn Ticks...*/
+6080,
+
+
+/* Ambient Light Percentages (R,G,B) 0-100*/
+100,100,100,
+

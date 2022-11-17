@@ -1,0 +1,7 @@
+,IDL_ENGLISH,IDL_SPANISH,IDL_GERMAN,IDL_FRENCH,IDL_RUSSIAN
+IDS_HELLO,"Hello ""Again","Hola""",Groscott,Bonjour,rus09
+IDS_HELLO_WORLD,"Hello, World!","Hola, Earth!","Groscott, Dutch!","Salute, planet!",rus2
+IDS_SENTENCE,This is an English sentence,This is an Spanish sentence,This is an German sentence,This is an French sentence,rus3
+IDS_QUOTE_TEST,"""This string is in quotes""","""This string is in quotes""","""This string is in quotes""","""This string is in quotes""",rus4
+IDS_NEW_TEST,A new string,new spanish,new german,new french,rus5
+IDS_NICE,Nice,beaus,shun,beau,nuk

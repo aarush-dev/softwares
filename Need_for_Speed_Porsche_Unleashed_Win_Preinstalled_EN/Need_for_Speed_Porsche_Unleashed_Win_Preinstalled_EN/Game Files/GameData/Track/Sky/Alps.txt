@@ -1,0 +1,145 @@
+BEGIN
+#Computer capability
+	HIGH
+#sky level type
+	MULTINORMAL
+#Does this layer block the sun
+NO
+#
+#  WEATHER REGION A
+#
+# sky map RGB (or ARGB) cannot choose "noise
+	st1a
+	sc1a
+	none
+#X Scale Factors
+	1
+	2
+	0
+#Y Scale Factors 
+	1
+	2
+	0
+#move ratio set to 0 for no movement at all 0 otherwise 50 is fast and 400 is slow
+	400
+#wind speed 0 for none, 10 for lots
+	0
+	2
+	0
+#wind direction 0-360  (north is 0, east is 90, south 180, west 270, etc)
+	90
+	40
+	0
+#warp speed  0 doesn't move, warpFactor 9 is super super fast... you probably want about 0.3 for mild warpage
+	0
+#warp amount 0 for none, otherwise give maximum proportion of UV to warp (0 to 1.0)
+	0
+#
+#  WEATHER REGION B
+#
+# sky map RGB (or ARGB) cannot choose "noise
+	st1b
+	sc1b
+	none
+#X Scale Factors
+	1
+	2
+	0
+#Y Scale Factors 
+	1
+	2
+	0
+#move ratio set to 0 for no movement at all 0 otherwise 50 is fast and 400 is slow
+	400
+#wind speed 0 for none, 10 for lots
+	0
+	2
+	0
+#wind direction 0-360  (north is 0, east is 90, south 180, west 270, etc)
+	90
+	40
+	0
+#warp speed  0 doesn't move, warpFactor 9 is super super fast... you probably want about 0.3 for mild warpage
+	0
+#warp amount 0 for none, otherwise give maximum proportion of UV to warp (0 to 1.0)
+	0
+############# note that the number of textures determines how many layers you have
+# CLOUD TEXTURES (you must always have three entries, enter NONE, or none for no texture)
+	flat
+	cc1a
+	none
+END
+#____________________________________________________________________________________
+BEGIN
+#Computer capability
+	MEDIUM
+#sky level type
+	MULTINORMAL
+#Does this layer block the sun
+NO
+#
+#  WEATHER REGION A
+#
+# sky map RGB (or ARGB) cannot choose "noise
+	st1a
+	none
+	none
+#X Scale Factors
+	4
+	0
+	0
+#Y Scale Factors 
+	4
+	0
+	0
+#move ratio set to 0 for no movement at all 0 otherwise 50 is fast and 400 is slow
+	400
+#wind speed 0 for none, 10 for lots
+	0
+	0
+	0
+#wind direction 0-360  (north is 0, east is 90, south 180, west 270, etc)
+	90
+	0
+	0
+#warp speed  0 doesn't move, warpFactor 9 is super super fast... you probably want about 0.3 for mild warpage
+	0
+#warp amount 0 for none, otherwise give maximum proportion of UV to warp (0 to 1.0)
+	0
+#
+#  WEATHER REGION B
+#
+# sky map RGB (or ARGB) cannot choose "noise
+	st1a
+	none
+	none
+#X Scale Factors
+	5
+	0
+	0
+#Y Scale Factors 
+	5
+	0
+	0
+#move ratio set to 0 for no movement at all 0 otherwise 50 is fast and 400 is slow
+	400
+#wind speed 0 for none, 10 for lots
+	0
+	0
+	0
+#wind direction 0-360  (north is 0, east is 90, south 180, west 270, etc)
+	90
+	40
+	0
+#warp speed  0 doesn't move, warpFactor 9 is super super fast... you probably want about 0.3 for mild warpage
+	0
+#warp amount 0 for none, otherwise give maximum proportion of UV to warp (0 to 1.0)
+	0
+############# note that the number of textures determines how many layers you have
+# CLOUD TEXTURES (you must always have three entries, enter NONE, or none for no texture)
+	cm1a
+	none
+	none
+END
+#___________________________________________________________________________________
+

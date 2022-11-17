@@ -1,0 +1,19 @@
+<DriverInfo>
+	<ProductInfo>
+		<Name>Adobe Bridge</Name>
+		<SAPCode>KBRG</SAPCode>
+		<CodexVersion>13.0</CodexVersion>
+		<Platform>win64</Platform>
+		<EsdDirectory>./KBRG</EsdDirectory>
+		<Dependencies>
+			<Dependency>
+				<SAPCode>ACR</SAPCode>
+				<BaseVersion>9.6</BaseVersion>
+				<EsdDirectory>./ACR</EsdDirectory>
+			</Dependency>
+		</Dependencies>
+	</ProductInfo>
+	<RequestInfo>
+		<InstallDir>C:\Program Files\Adobe</InstallDir>
+	</RequestInfo>
+</DriverInfo>

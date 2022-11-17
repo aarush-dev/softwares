@@ -1,0 +1,66 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Car Logo
+;
+; Created by Gary Steinke, oct29/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.CarLogo
+description=Car Logo
+
+parts=area,data
+
+name.value=ID_CARLOGO
+
+states=normal,hidden,disabled
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=0
+resizeable.flags=0
+pos.value=313,104
+pos.label=control.pos
+
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=area,data
+
+[state.hidden]
+parts=data
+
+[state.disabled]
+parts=area,data
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff,align,accessor,othersource
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+align.type=INT
+align.value=0
+
+accessor.type=STRING
+othersource.type=STRING
+
+[part.area]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=1,20
+size.flags=HIDDEN|READONLY
+color.value=0x8000ff00

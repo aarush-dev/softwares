@@ -1,0 +1,165 @@
+; Canon UFRII LT XPS Printer Driver
+; Copyright CANON INC. 2013 All Rights Reserved
+; InfID: {8D613C95-A02B-458e-9B14-F87FA726D16F}
+
+[Version]
+Signature="$Windows NT$"
+Provider=%CANON%
+ClassGUID={4D36E979-E325-11CE-BFC1-08002BE10318}
+Class=Printer
+CatalogFile=cnnx0gb2.cat
+DriverIsolation=2
+DriverVer=02/26/2013,1.70.0.246
+
+[Manufacturer]
+"Canon"=Canon,NTamd64,NTamd64.6.0
+
+[Canon.NTamd64]
+"Canon MF4800 UFRII LT XPS"        = MF4800_PREVISTA,USBPRINT\CanonMF4800_Series_X464A
+
+[Canon.NTamd64.6.0]
+"{FD95B869-CE70-44ED-B93B-467CEE816003}"     = {FD95B869-CE70-44ED-B93B-467CEE816003}, {FD95B869-CE70-44ED-B93B-467CEE816003}
+"{EDE44B63-62A5-4150-A5C1-533BCBB50197}"     = {EDE44B63-62A5-4150-A5C1-533BCBB50197}, {EDE44B63-62A5-4150-A5C1-533BCBB50197}
+"Canon MF4800 UFRII LT XPS"        = MF4800,USBPRINT\CanonMF4800_Series_X464A
+"Canon MF4800 UFRII LT XPS"        = MF4800,WSDPRINT\CanonMF4800_Series_X464A
+
+; Language Monitor Core Driver Package
+[{FD95B869-CE70-44ED-B93B-467CEE816003}]
+DriverVer=12/26/2012,1.70.0.246
+CopyFiles=WSD_LM
+
+[CORE_WSD_LM]
+LanguageMonitor="Canon WSD Language Monitor,cnnx0_flm.dll"
+CopyFiles=WSD_LM
+
+; Color Profile Core Driver Package
+[{EDE44B63-62A5-4150-A5C1-533BCBB50197}]
+DriverVer=09/22/2008,1.70.0.246
+CopyFiles=COMMON_PROFILES,SPECIFIC_PROFILES
+
+[CORE_COMMON_PROFILES]
+CopyFiles=COMMON_PROFILES
+
+[CORE_SPECIFIC_PROFILES]
+CopyFiles=SPECIFIC_PROFILES
+
+[MF4800_PREVISTA]
+CopyFiles=MF4800_FILES,XPS_COMMON_MF4800_FILES,COMMON_PROFILES,SPECIFIC_PROFILES,WSD_LM
+DriverFile=mxdwdrv.dll
+ConfigFile=cnnx0_fui_mmf4800xps.dll
+HelpFile=cnnx0_cb3basic_len-GB_mmf4800xps.chm
+DataFile=cnnx0_len-GB_mmf4800xps.zpd
+LanguageMonitor="Canon WSD Language Monitor,cnnx0_flm.dll"
+Include=NTPRINT.INF, MSXPSDRV.INF
+Needs=UNIDRV.OEM, XPSGPD.OEM, XPSDRV.OEM
+PrintProcessor="MS_XPS,filterpipelineprintproc.dll"
+
+[MF4800]
+CopyFiles=MF4800_FILES,XPS_COMMON_MF4800_FILES
+DriverFile=mxdwdrv.dll
+ConfigFile=cnnx0_fui_mmf4800xps.dll
+HelpFile=cnnx0_cb3basic_len-GB_mmf4800xps.chm
+DataFile=cnnx0_len-GB_mmf4800xps.zpd
+CoreDriverSections="{D20EA372-DD35-4950-9ED8-A6335AFE79F0},UNIDRV.OEM,XPSGPD.OEM","{D20EA372-DD35-4950-9ED8-A6335AFE79F3},sRGBPROFILE.OEM","{D20EA372-DD35-4950-9ED8-A6335AFE79F5},XPSDRV.OEM","{FD95B869-CE70-44ED-B93B-467CEE816003},CORE_WSD_LM","{EDE44B63-62A5-4150-A5C1-533BCBB50197},CORE_COMMON_PROFILES,CORE_SPECIFIC_PROFILES"
+
+[MF4800_FILES]
+; Config Files
+cnnx0_fpublic_mmf4800xps.w2b,,,0x00000020
+; Common Files
+cnnx0_len-GB_mmf4800xps.ini,,,0x00000020
+cnnx0_len-GB_mmf4800xps.zpd,,,0x00000020
+cnnx0_mmf4800xps_PipelineConfig.xml,,,0x00000020
+
+[XPS_COMMON_MF4800_FILES]
+; Rendering Filter
+cnnx0_faqua_mmf4800xps.dll,cnnx0_faqua.dll,,0x00000020
+cnnx0_fxitp_mmf4800xps.dll,cnnx0_fxitp.dll,,0x00000020
+cnnx0_flbor_mmf4800xps.dll,cnnx0_flbor.dll,,0x00000020
+cnnx0_fudil_mmf4800xps.dll,cnnx0_fudil.dll,,0x00000020
+cnnx0_fct_mmf4800xps.dll,cnnx0_fct.dll,,0x00000020
+cnnx0_fcalib_mmf4800xps.dll,cnnx0_fcalib.dll,,0x00000020
+cnnx0_cb3_fb3w_mmf4800xps.dll,cnnx0_cb3_fb3w.dll,,0x00000020
+cnnx0_cb3_fcoral_mmf4800xps.dll,cnnx0_cb3_fcoral.dll,,0x00000020
+; Layout Filter
+cnnx0_fxeteap_mmf4800xps.exe,cnnx0_fxeteap.exe,,0x00000020
+cnnx0_fxettool_mmf4800xps.dll,cnnx0_fxettool.dll,,0x00000020
+cnnx0_fxetlayout_mmf4800xps.dll,cnnx0_fxetlayout.dll,,0x00000020
+cnnx0_cb3_fxet_len-GB_mmf4800xps.chm,cnnx0_cb3_fxet_len-GB.chm,,0x00000020
+cnnx0_cb3_fxet_mmf4800xps.zres,cnnx0_cb3_fxet.zres,,0x00000020
+cnnx0_cb3_fxet_len-GB_mmf4800xps.zres,cnnx0_cb3_fxet_len-GB.zres,,0x00000020
+; Config Module
+cnnx0_fui_mmf4800xps.dll,cnnx0_fui.dll,,0x00000020
+cnnx0_cb3basic_len-GB_mmf4800xps.chm,cnnx0_cb3basic_len-GB.chm,,0x00000020
+cnnx0_cb3_len-GB_mmf4800xps.zres,cnnx0_cb3_len-GB.zres,,0x00000020
+cnnx0_cb3_mmf4800xps.zres,cnnx0_cb3.zres,,0x00000020
+cnnx0_fprivate_mmf4800xps.w2b,cnnx0_fprivate.w2b,,0x00000020
+cnnx0_ftcpbidi_mmf4800xps.m2b,cnnx0_ftcpbidi.m2b,,0x00000020
+; Common Modules
+cnnx0_fresop_mmf4800xps.dll,cnnx0_fresop.dll,,0x00000020
+cnnx0_fkyns_mmf4800xps.dll,cnnx0_fkyns.dll,,0x00000020
+cnnx0_fdia_mmf4800xps.dll,cnnx0_fdia.dll,,0x00000020
+
+[COMMON_PROFILES]
+CNZSRGBC.ICC,,,0x00000020
+CNZJPNA1.ICC,,,0x00000020
+
+[SPECIFIC_PROFILES]
+CNZARGB.ICC,,,0x00000020
+
+[WSD_LM]
+cnnx0_flm.dll,,,0x00000020
+
+[DestinationDirs]
+DefaultDestDir=66000
+COMMON_PROFILES=66003
+WSD_LM=66002
+
+[SourceDisksNames.amd64]
+1 = %DISK1%,cnnx0_cb3_len-GB_mmf4800xps_pamd64.cab,
+
+[SourceDisksFiles]
+cnnx0_faqua.dll              = 1
+cnnx0_fxitp.dll              = 1
+cnnx0_flbor.dll              = 1
+cnnx0_fudil.dll              = 1
+cnnx0_fct.dll                = 1
+cnnx0_fcalib.dll             = 1
+cnnx0_cb3_fb3w.dll           = 1
+cnnx0_cb3_fcoral.dll         = 1
+cnnx0_fxeteap.exe            = 1
+cnnx0_fxettool.dll           = 1
+cnnx0_fxetlayout.dll         = 1
+cnnx0_cb3_fxet_len-GB.chm    = 1
+cnnx0_cb3_fxet.zres          = 1
+cnnx0_cb3_fxet_len-GB.zres   = 1
+cnnx0_fui.dll                = 1
+cnnx0_cb3basic_len-GB.chm    = 1
+cnnx0_cb3_len-GB.zres        = 1
+cnnx0_cb3.zres               = 1
+cnnx0_fprivate.w2b           = 1
+cnnx0_ftcpbidi.m2b           = 1
+cnnx0_fresop.dll             = 1
+cnnx0_fkyns.dll              = 1
+cnnx0_fdia.dll               = 1
+cnnx0_flm.dll                = 1
+cnnx0_fpublic_mmf4800xps.w2b              = 1
+cnnx0_len-GB_mmf4800xps.ini               = 1
+cnnx0_len-GB_mmf4800xps.zpd               = 1
+cnnx0_mmf4800xps_PipelineConfig.xml       = 1
+CNZSRGBC.ICC   = 1
+CNZJPNA1.ICC   = 1
+CNZARGB.ICC    = 1
+
+[ControlFlags]
+AlwaysExcludeFromSelect={FD95B869-CE70-44ED-B93B-467CEE816003},{EDE44B63-62A5-4150-A5C1-533BCBB50197}
+
+[PrinterPackageInstallation.amd64]
+PackageAware=TRUE
+CoreDriverDependencies={D20EA372-DD35-4950-9ED8-A6335AFE79F0},{D20EA372-DD35-4950-9ED8-A6335AFE79F3},{D20EA372-DD35-4950-9ED8-A6335AFE79F5},{FD95B869-CE70-44ED-B93B-467CEE816003},{EDE44B63-62A5-4150-A5C1-533BCBB50197}
+
+[Strings]
+CANON="Canon"
+DISK1="Canon MF4800 Series Setup Disk"
+
+[OEM URLS]
+%CANON% = "http://www.canon-europe.com/"

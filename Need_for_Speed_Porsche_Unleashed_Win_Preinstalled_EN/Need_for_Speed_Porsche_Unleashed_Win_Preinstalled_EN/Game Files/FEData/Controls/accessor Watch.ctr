@@ -1,0 +1,75 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Accessor Watch
+;
+; A simple label, which updates itself to show the value of the accessor given in layman.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.AccessorWatch
+description=Accessor Watch
+
+parts=label,data
+
+name.value=ID_ACCESSORWATCH
+
+states=normal,hidden
+states.flags=0
+
+size.value=100,30
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=label,data
+
+[state.disabled]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=accessor,transon,transoff,align,nosize
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+align.value=0
+align.type=INT
+
+accessor.type=STRING
+accessor.value=Put_Accessor_Value_Here
+
+nosize.type=INT
+nosize.value=1
+nosize.flags=HIDDEN|READONLY
+
+[part.label]
+id=TEXT
+pos.value=(0-label.size.width)/2*data.align,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+fontPathName.value=univers8b.ffn
+text.value=WATCH
+text.maxlength=32
+text.label=text
+text.key=text
+text.flags=HIDDEN|READONLY
+foreColor.value=0xffffffff
+backColor.value=0x00000000

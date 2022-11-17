@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>6AA2B192-B1AA-435F-9F4F-0987B657C192</packageid>
+	<name>Apps</name>
+	<version>5.8.0.592</version>
+	<target_location>/Components/Apps/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Apps</name>
+			<assets_size>9136473</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvLz4=</validation_xml>
+				<sig>QubRduE6jRLV3F8ZfU+cPfeSxo8C58d4HCqK7M4/9uOeoki/Sehssf4FLAoc6u+DFgdbp10KShxQVcJfqzGxRLClzGPXCeqyr3706AKKmWJQhd7AUe/mpxh8pP17QDZPcuYHu2hy+gWl7M1pYb7gNo/7umS16RpAE16kNq+k+iXhUS2/ZzFU/ZRB89rfrXxaDLViT6hjwFCGKtvh0hdWiQM8AwW9/biUXgzJvJIjokXOzC4Sa77qZYNf2WEZ4yy4AuqTPylSEX6eNq7h7Z+ahpBnmKESAccfXeqV7xNxESFk1x2KNNHutIAjMkQX6nv7doPwVskuywlwA0nbEznHmzJTTyyk8UF/66FwOscsNgpVgSTmKGNKOGqjYUEXygfUcskhAB6GKZNvh2OsodRMvNo6GK0o46u5ofVT7tNPzXZOGyZoRgg7ukybObXxWoq8pyI5o447yt3BBjjFa2q2RGzicHJZm9S81uvdH14AAbV7b8pRLH3FITHP+rwwsVKV</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

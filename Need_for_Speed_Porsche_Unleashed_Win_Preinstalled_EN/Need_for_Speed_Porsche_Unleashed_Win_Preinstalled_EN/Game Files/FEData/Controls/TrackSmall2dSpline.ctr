@@ -1,0 +1,63 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Track Small 2dSpline
+;
+; 
+;
+; Created by Gary Steinke, oct29/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.TrackSmall2dSpline
+description=Track Small 2d Spline
+
+parts=area,data
+
+name.value=ID_TRACK2DSPline
+
+states=normal,hidden
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=0
+pos.value=313,104
+pos.label=control.pos
+
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=area,data
+
+[state.hidden]
+parts=data
+
+
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+
+
+[part.area]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=control.size.width,control.size.height
+size.flags=HIDDEN|READONLY
+color.value=0x8000ff00

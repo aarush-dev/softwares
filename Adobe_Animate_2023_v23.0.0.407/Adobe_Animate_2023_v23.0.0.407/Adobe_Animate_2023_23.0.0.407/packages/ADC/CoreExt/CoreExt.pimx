@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>E3CB07C7-DEDA-498B-9BFA-EDD6F19F113E</packageid>
+	<name>CoreExt</name>
+	<version>5.8.0.592</version>
+	<target_location>/CoreExt/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>CoreExt</name>
+			<assets_size>3047448</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>Analytics</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/CoreExt/Analytics.dll</module_path>
+					<display_name>Analytics Core Extension</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>LocManager</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/CoreExt/LocManager.dll</module_path>
+					<display_name>LocaLization Manager</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>C3Prefs</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/CoreExt/PrefsManager.dll</module_path>
+					<display_name>Preference Manager</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+QW5hbHl0aWNzLmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVy
+ZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1
+c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBU
+cnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+TG9jTWFuYWdlci5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWduYXR1
+cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0IFRy
+dXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNlcnQg
+VHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48RmlsZT48SW5zdGFsbFBhdGg+
+XFByZWZzTWFuYWdlci5kbGw8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRpZ2l0YWxTaWdu
+YXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8fURpZ2lDZXJ0
+IFRydXN0ZWQgRzQgQ29kZSBTaWduaW5nIFJTQTQwOTYgU0hBMzg0IDIwMjEgQ0Exe3x9RGlnaUNl
+cnQgVHJ1c3RlZCBSb290IEc0PC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZv
+Pg==</validation_xml>
+				<sig>uEbbjShHe/qAMDodcRaH/bXV9Zj22OEvjah1clfn0+d5eUD2zx/TmV5yMDZIpiP14lR9aNu/CWmSLUQ72KM70Vq/P+dSlmkdTNi3FVkPJ2qfEwChcwpaYosXNT/VDQ6yeveDl5OUtKOTFzb62AdiMad3285ljG65NcuO1G7GjivtruFPa3b+F8HgLzO2kzq1YylhGfV20FDTDhyV70a+nqyDYTZLOXLnPVtc1nfppjesTOXbKvofBX8kFNasREKFVdmsu3jeP9/4uCGPjcZec781NsJpSQ5Zna4TDLc0rHlrUR2Bq5j6A+fDBxCFOA7qmJMqZ6CPcOz2Gif80EFPlUu5ZC8gQ/1gxMLRKISI0/iHtUa7zkDW81byHsYzotzYWJWedq47LiGMNuDUEEMnqczQRR0C88o9nBuDV8R4rSCmvCWddnP/UEyZtGDFnbbBPCaWqh0K0z2Xkb1J4pXm/Cxh2SS2siXcaMBAY49oX8NQ3O5+qL2ao2Gy87W2Gl85</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

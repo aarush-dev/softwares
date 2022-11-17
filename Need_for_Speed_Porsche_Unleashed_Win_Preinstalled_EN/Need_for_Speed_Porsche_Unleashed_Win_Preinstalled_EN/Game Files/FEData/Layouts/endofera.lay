@@ -1,0 +1,10 @@
+[section.0]
+id=REAL.BLACK_640x480
+name=ID_SCREEN
+size=640,480
+color=0xff0000ff
+screen=
+room=ID_VICTORY
+callbacklist=ID_ENDOFERASCREEN
+musicfile=dogface
+canplaygame=0

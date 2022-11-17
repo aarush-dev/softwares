@@ -1,0 +1,64 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Showcase Picture
+;
+; Showcase picture
+;
+; Created by Gary Steinke, oct8/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.ShowcasePicture
+description=Showcase Picture
+
+parts=area,data
+
+name.value=ID_Showcase Picture
+
+states=normal,hidden
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=0
+pos.value=313,104
+pos.label=control.pos
+
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=area,data
+
+[state.hidden]
+parts=data
+
+
+[part.data]
+id=DATA
+attributes.value=transon,transoff,number
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+number.type=INT
+number.value=0
+
+
+[part.area]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=control.size.width,control.size.height
+size.flags=HIDDEN|READONLY
+color.value=0x8000ff00

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>91548FC1-ECBB-466D-8792-CFCAACB915B6</packageid>
+	<name>Home</name>
+	<version>5.8.0.592</version>
+	<target_location>/Components/Home/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Home</name>
+			<assets_size>10006613</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvLz4=</validation_xml>
+				<sig>PRv+vU3QjzPa3IX7SasSOVE5rWAsJV8JSv9KhIn/3DIykpq0CXw+D/eIgqO0nuh1u318cubOcO1LNzqmwY/UMXhWq0SUOjIzppfk4EFGktrkbFwRB2rSRNzucITxj7AOzAt+9PMYtczdGGdh76dCojoPnuOpf34unvQA1i/QoN7ftNKx95bs9cIl+Zm7ZwbtEeHVye17XQ9qTTgkAqqIAxSdlXEP3agZMj+H2+Hm3MpmDEWsCIulsfI7c3O0c/q+FaTYFo5mc+qe50FhduQiuSd4yETGHvOsdBJibKd9/ofXChPegv9dT+4OJVTl1DW2W6MBAxNy+8x3jLob0PgPmeYbjSjL4weOiieNGldExnmmWzM/e5Cd4+CXc8mU0IF/vHGT+xRxO45y3zwpK/rRFR60zbm7sjP2a1Gk7Pw16i8g8cVzkhz3je4P6ZHqeIdLq0QSsCTyrzmaLNZpQEB/IAVuQpDcG+AgX6jGiGP9IXt8swzs1bkB2BOYWSvgqCKk</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

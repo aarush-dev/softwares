@@ -1,0 +1,2 @@
+-install adobe animate 2023
+-replace the .exe from crack folder to installation!

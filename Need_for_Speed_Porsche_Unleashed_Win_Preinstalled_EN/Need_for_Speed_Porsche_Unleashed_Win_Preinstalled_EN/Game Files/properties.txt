@@ -1,0 +1,17 @@
+capabilities=none
+desktop.shortcut=false
+extension=channel
+install.inactive=ignore
+locale=any
+macresourceforks=false
+mimetype=application/x-castanet-channel
+name=Need For Speed 5
+platform=any
+publish.time=960249902650
+segment=any/any
+title=Need For Speed 5
+type=Data
+update.action=ignore
+update.active=never
+update.inactive=weekly
+update.schedule=every 1 weeks on sun update at 04:00AM

@@ -1,0 +1,98 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; Standard Control Template
+;
+; This template is provided to make sure all controls share similar functionality.  
+; A description would go here to explain what the control is used for and any
+; special traits it has.
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
+
+
+
+
+
+
+;;;WHEN YOU USE THE TEMPLATE, REMEMBER TO REMOVE ALL COMMENTS BELOW THIS POINT!!!!!!!!!!!!!!!!!!!!!!!!
+;;;  they don't seem to work with the current version of FERT.  
+;;;
+;;; you CAN leave the end of file, though
+
+
+
+[control]
+id=NFS5.Something
+description=put description here
+
+parts=data
+; All the parts described in this file.  A data part should almost always be included.
+; Note: The list of parts MUST go here, without even a comment between it and description.
+
+name.value=ID_PUTDEFAULTNAMEHERE
+
+; These are the 5 states supported currently by NFS.  Other states can be added and
+; will be treated as custom states.
+;
+; Only include hover if you support it, as it would cause a unneccisary performance hit otherwise.
+; The rest of the states should be included even if they are not currently used to allow the possibility
+; of extra functionality in the future.
+states=normal,hidden,hover,selected,disabled
+states.flags=0
+
+size.value=100,150
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+; Unless you have a very good reason.  Leave autosize as 1. 
+; Otherwise things don't hide or get input as you'd usually want them to.
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+; All states should include the data part
+[state.normal]
+parts=data
+
+; The parst that are active when a mouse is hovering over the control
+[state.hover]
+parts=data
+
+; The parts that are active when the control becomes selected (grabs control)
+[state.selected]
+parts=data
+
+; Only include the data part if it is hidden from view
+[state.hidden]
+parts=data
+
+; If disabled is not supported or not yet supported by the control, it is probably better to just make it the same as hidden.
+[state.disabled]
+parts=data
+
+
+;All controls should include a data part if it is required.  Even if not, it is probably
+;better to leave one in that is empty to allow future expansion.
+[part.data]
+id=DATA
+attributes.value=transon,transoff
+transon.type=STRING
+transon.value=NONE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;End of File;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

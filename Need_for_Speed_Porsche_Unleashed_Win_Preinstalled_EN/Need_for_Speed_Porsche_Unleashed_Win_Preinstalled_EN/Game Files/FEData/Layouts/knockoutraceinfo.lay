@@ -1,0 +1,16 @@
+[section.0]
+id=REAL.BLACK_640x480
+name=ID_SCREEN
+size=640,480
+color=0xff000000
+screen=ID_SCREEN
+room=ID_TRACK
+callbacklist=
+musicfile=menu*
+canplaygame=1
+
+[section.1]
+id=NFS5.HEADER
+name=ID_HEADER
+state=normal
+stringID=20202

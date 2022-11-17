@@ -1,0 +1,766 @@
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
+// ANIMDEFS.TXT
+//
+//	- maintains object property definitions for all tagged objects (not just animations)
+//
+//	Some common properties.  For a complete list look in WObjectDefs.cpp/h
+//
+//	"mass"
+//	"velocityfactor"
+//	"frameTickOffset"
+//	"radius"
+//	"triggerable"
+//	"drivethru"	  
+//	"drivethrough"
+//	"dynamicLight"	  
+//	"ticksPerVertFrame"
+//
+//	CollideTypes { kCylinder, kBox, kSmackable };
+//	AudioTypes { kAudSign=0,kAudMetalSign,kAudGlass,kAudWoodBox,kAudPylon,kAudTree,kAudBush,kAudCarBody,kAudWood,kAudSnow,kAudIce,kAudEarth,kAudRock};
+//
+
+SECTION:Audio
+{
+	tag=TRAN;
+	SECTION:Sound
+	{
+		PatchID=833;
+		Range=300;
+		FadeIn=17;
+		Trigger=0;
+		FadeOut=0;
+		MinRepeat=0;
+		RandomRepeat=0;
+		Volume=100;				// Percent
+	}
+}
+
+SECTION:ANIM
+{
+	tag=ENDW;
+	collideType=kBox;
+}
+
+SECTION:ANIM
+{
+	tag=FNSH;
+	collideType=0;
+}
+
+SECTION:ANIM
+{
+	tag=SIGN;
+	collideType=kSmackable;
+	audioType=kAudMetalSign;
+	mass=80;
+}
+
+SECTION:ANIM
+{
+	tag=GAS;
+	collideType=kSmackable;
+	mass=90;
+}
+
+SECTION:ANIM
+{
+	tag=TABL;
+	collideType=kSmackable;
+	mass=175;
+}
+
+SECTION:ANIM
+{
+	tag=SEAT;
+	collideType=kSmackable;
+	mass=110;
+}
+
+SECTION:ANIM
+{
+	tag=REST;
+	collideType=kSmackable;
+	mass=150;
+}
+
+
+SECTION:ANIM
+{
+	tag=DIST;
+	collideType=kSmackable;
+	mass=150;
+}
+
+
+SECTION:ANIM
+{
+	tag=TEMP;	//WAS SIGN
+	collideType=kCylinder;
+	mass=5;
+
+	speed=0;	// precedes a list of pieces for this speed		
+	SECTION:PIECE
+	{
+		playbackrate=3;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+		//BaseGroup=SIGN;
+		QuatGroup=SIGN;
+	}
+
+	speed=5;	// precedes a list of pieces for this speed		
+	SECTION:PIECE
+	{
+		playbackrate=8;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+		//BaseGroup=SIGN;
+		QuatGroup=SIGN;
+	}
+}
+
+
+SECTION:ANIM	//	Exploding Wooden Crate
+{
+	tag=BBOX;
+	collideType=kBox;
+	audioType=kAudMetalSign;
+	mass=20;
+	velocityFactor=18;
+	dynamicLight=1;
+
+	speed=0;
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX01;
+		QuatGroup=BX01;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX02;
+		QuatGroup=BX02;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX03;
+		QuatGroup=BX03;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX04;
+		QuatGroup=BX04;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX05;
+		QuatGroup=BX05;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX06;
+		QuatGroup=BX06;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX07;
+		QuatGroup=BX07;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX08;
+		QuatGroup=BX08;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX09;
+		QuatGroup=BX09;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX10;
+		QuatGroup=BX10;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX11;
+		QuatGroup=BX11;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX12;
+		QuatGroup=BX12;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX13;
+		QuatGroup=BX13;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX14;
+		QuatGroup=BX14;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+	SECTION:PIECE
+	{
+		playbackrate=5;
+		BaseGroup=BX15;
+		QuatGroup=BX15;
+		properties=LANDFLAT;
+		properties=DIRECTED;
+	}
+}
+
+
+SECTION:ANIM	//	Man Hammering
+{
+	tag=HAMR;
+	collideType=kCylinder;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=HAMR;
+		VertGroup=HAMR;
+	}
+}
+
+SECTION:ANIM	//	Man Waving
+{
+	tag=WAVM;
+	collideType=kCylinder;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=WAVM;
+		VertGroup=WAVM;
+	}
+}
+
+SECTION:ANIM	//	Woman Waving
+{
+	tag=WAVW;
+	collideType=kCylinder;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=WAVW;
+		VertGroup=WAVW;
+	}
+}
+
+SECTION:ANIM	//	Welder
+{
+	tag=WELD;
+	collideType=kCylinder;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=WELD;
+		VertGroup=WELD;
+	}
+}
+
+SECTION:ANIM	//	Man Walking with Large Saw
+{
+	tag=SAWW;
+	collideType=kCylinder;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=SAWW;
+		VertGroup=SAWW;
+	}
+}
+
+SECTION:ANIM	//	Docker just walking
+{
+	tag=DOC2;
+	collideType=0;
+	ticksPerVertFrame=3;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		properties=LOOP;
+		//BaseGroup=SGN0;
+		QuatGroup=DOC2;
+		VertGroup=DOC2;
+	}
+}
+
+SECTION:ANIM	//	Docker walking, carrying box
+{
+	tag=DOC3;	
+	collideType=0;
+	ticksPerVertFrame=3;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		properties=LOOP;
+		//BaseGroup=SGN0;
+		QuatGroup=DOC3;
+		VertGroup=DOC3;
+	}
+}
+
+SECTION:ANIM	//	Fisherman pointing
+{
+	tag=FIS1;
+	collideType=0;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=FIS1;
+		VertGroup=FIS1;
+	}
+}
+
+SECTION:ANIM	//	Fisherman pulling
+{
+	tag=FIS2;
+	collideType=0;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=FIS2;
+		VertGroup=FIS2;
+	}
+}
+
+SECTION:ANIM	//	Man sweeping
+{
+	tag=SWEE;
+	collideType=0;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=SWEE;
+		VertGroup=SWEE;
+	}
+}
+
+SECTION:ANIM
+{
+	tag=WELD;
+	collideType=0;
+
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=WELD;
+		VertGroup=WELD;
+	}
+}
+
+SECTION:ANIM
+{
+	tag=SAW1;
+	collideType=kSmackable;
+
+	numPieces=1;		
+	
+	speed=0;			
+	SECTION:PIECE
+	{
+		//BaseGroup=SGN0;
+		QuatGroup=SAW1;
+		VertGroup=SAW1;
+
+	}
+}
+
+SECTION:ANIM
+{
+	tag=SAWH;
+	collideType=kSmackable;
+	dynamicLight=1;
+	mass=40;
+}
+
+SECTION:ANIM
+{
+	tag=DFLT;
+	collideType=kCylinder;
+	mass=10;
+}
+
+SECTION:ANIM
+{
+	tag=CONE;
+	collideType=kSmackable;
+	audioType=kAudPylon;
+	dynamicLight=1;
+	mass=20;
+}
+
+SECTION:ANIM	//	Solid gate arm pole
+{
+	tag=GATE;
+	collideType=kSmackable;
+	audioType=kAudMetalSign;
+	dynamicLight=1;
+	mass=400;
+}
+
+SECTION:ANIM	//	Large orange pilon with 2 horizontal white stripes
+{
+	tag=PLON;
+	collideType=kSmackable;
+	audioType=kAudPylon;
+	dynamicLight=1;
+	mass=201;
+}
+
+SECTION:ANIM
+{
+	tag=CRT1;
+	collideType=kSmackable;
+	audioType=kAudWoodBox;
+	dynamicLight=1;
+	mass=100;
+}
+
+SECTION:ANIM
+{
+	tag=DUMP;
+	collideType=kSmackable;
+	audioType=kMetal;
+	mass=1000;
+}
+
+// Normal ARROW
+SECTION:ANIM
+{
+	tag=ARW1;
+	collideType=0;
+	triggerable=1;
+}
+
+// ARROW 90deg
+SECTION:ANIM
+{
+	tag=ARW2;
+	collideType=0;
+	triggerable=1;
+}
+
+// ARROW 180deg
+SECTION:ANIM
+{
+	tag=ARW3;
+	collideType=0;
+	triggerable=1;
+}
+
+// ARROW 360deg
+SECTION:ANIM
+{
+	tag=ARW4;
+	collideType=0;
+	triggerable=1;
+}
+
+SECTION:ANIM
+{
+	tag=SBOX;
+	collideType=kBox;
+}
+
+SECTION:ANIM
+{
+	tag=PILR;
+	collideType=kCylinder;
+}
+
+SECTION:ANIM
+{
+	tag=PILB;
+	collideType=kBox;
+}
+
+SECTION:ANIM
+{
+	tag=GATE;
+	collideType=kSmackable;
+	mass=30;
+}
+
+SECTION:ANIM
+{
+	tag=PILC;
+	collideType=kSmackable;
+	mass=50;
+}
+
+SECTION:ANIM
+{
+	tag=DETH;
+	collideType=kSmackable;
+	mass=20;
+}
+
+SECTION:ANIM
+{
+	tag=TRUK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=8000;
+}
+
+SECTION:ANIM	//	Farm Truck
+{
+	tag=FTRK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=7000;
+}
+
+
+SECTION:ANIM
+{
+	tag=PTRK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=6000;
+}
+SECTION:ANIM
+{
+	tag=LTRK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=8000;
+}
+
+SECTION:ANIM
+{
+	tag=WTRK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=7000;
+}
+
+SECTION:ANIM
+{
+	tag=VAN1;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=5000;
+}
+
+SECTION:ANIM
+{
+	tag=FTRK;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=8000;
+}
+
+SECTION:ANIM
+{
+	tag=TRCK;
+	collideType=kSmackable;
+	audioType=kAudMetal;
+	mass=7000;
+}
+
+SECTION:ANIM
+{
+	tag=VANB;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=3500;
+}
+
+SECTION:ANIM
+{
+	tag=MERC;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=2000;
+}
+
+SECTION:ANIM
+{
+	tag=ECON;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=1700;
+}
+
+SECTION:ANIM
+{
+	tag=SEMI;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=6000;
+}
+
+SECTION:ANIM
+{
+	tag=SPRT;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=2000;
+}
+
+
+SECTION:ANIM
+{
+	tag=BUS;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=9999;
+}
+
+SECTION:ANIM
+{
+	tag=WCAR;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=2000;
+}
+
+SECTION:ANIM
+{
+	tag=CARS;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=1500;
+}
+
+SECTION:ANIM
+{
+	tag=XTRE;
+	CollideType=kCylinder;
+	//Radius=1;
+	AudioType=kAudTree;
+}
+
+SECTION:ANIM
+{
+	tag=TTRE;
+	CollideType=kCylinder;
+	//Radius=3;
+	AudioType=kAudTree;
+}
+
+SECTION:ANIM
+{
+	tag=STRE;
+	CollideType=kCylinder;
+	//Radius=5;
+	AudioType=kAudTree;
+}
+
+
+SECTION:ANIM
+{
+	tag=BUSH;
+	CollideType=kCylinder;
+	Radius=1;
+        AudioType=kAudBush;
+	drivethrough=1;
+}
+
+SECTION:ANIM	//	Fire Hydrant
+{
+	tag=HYDR;
+	collideType=kSmackable;
+	audioType=kAudMetalSign;
+	mass=240;
+}
+
+SECTION:ANIM	//	Trash Can Body
+{
+	tag=TRSH;
+	collideType=kSmackable;
+	audioType=kAudMetal;
+	mass=100;
+}
+
+SECTION:ANIM	//	Trash Can Lid
+{
+	tag=TRLD;
+	collideType=kSmackable;
+	audioType=kAudCarBody;
+	mass=50;
+}
+
+SECTION:ANIM	//	Breakaway Pipe with Steam, Verticle
+{
+	tag=PSTV;
+	collideType=kSmackable;
+	audioType=kAudMetalSign;
+	mass=400;
+}
+
+SECTION:ANIM	//	Stone Column, Horizontal
+{
+	tag=CLMH;
+	collideType=kSmackable;
+	audioType=kAudRock;
+	mass=3500;
+}
+
+
+

@@ -1,0 +1,43 @@
+[control]
+id=REAL.BLACK_640x480
+description=Black Screen (640x480)
+parts=canvas,data
+states=normal
+name.value=ID_SCREEN
+pos.flags=HIDDEN|READONLY
+size.value=640,480
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+moveable.value=0
+moveable.flags=HIDDEN|READONLY
+resizeable.value=0
+resizeable.flags=HIDDEN|READONLY
+state.flags=HIDDEN
+
+[state.normal]
+parts=canvas,data
+
+[part.canvas]
+id=RECT
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.value=control.size.width,control.size.height
+size.flags=HIDDEN|READONLY
+color.value=0xff000000
+
+[part.data]
+id=DATA
+attributes.value=screen,room,callbacklist,musicfile,canplaygame
+screen.type=STRING
+screen.value=ID_SCREEN
+screen.label=Screen
+room.type=STRING
+room.value=ID_GARAGE
+room.label=3d Room
+callbacklist.type=STRING
+callbacklist.value=ID_NONE
+callbacklist.label=Callback List
+musicfile.type=STRING
+musicfile.value=menu*
+canplaygame.type=INT
+canplaygame.value=0

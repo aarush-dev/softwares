@@ -1,0 +1,7 @@
+channel=games/Pioneer/Nfs5Eng
+id=3372617149507559973
+prepare.time=952504662650
+request.time=1017668357470
+transmitter=trans.ea.com
+update.time=1017669054200
+url=http://trans.ea.com/games/Pioneer/Nfs5Eng

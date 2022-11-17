@@ -1,0 +1,363 @@
+;
+; MF44SCN.INF  -- Windows Setup File for the MF4800 Series (Windows XP,Vista,7,8(64-bit))
+; Copyright CANON INC. 2013 All Rights Reserved
+;
+; InfID: {F576100D-4E4F-4cd7-8355-1782DC1CB0A4}
+;
+; Last Modified: 13-Dec-2012
+
+[Version]
+Signature="$Windows NT$"
+Class=Image
+ClassGUID={6bdd1fc6-810f-11d0-bec7-08002be2092f}
+
+;  The above GUID is the class GUID for all scanners and MUST NOT change
+Provider=%Msft%
+CatalogFile.NTamd64=MF44SCN.CAT
+DriverVer=02/24/2013, 11.3.0.0
+
+[DestinationDirs]
+DefaultDestDir=11
+CNCDsFiles=10,"twain_32\"%CNCRFN%
+CNCDsCommonFilesXP=24,"CanonMF\"%CNCRFN%
+CNCDsCommonFiles=16422,"Canon\CanonMF\"%CNCRFN%
+CNCMediaFiles=10,media
+ColorFiles.NT=11,spool\drivers\Color
+
+[ControlFlags]
+;ExcludeFromSelect=*
+
+[Manufacturer]
+%Mfg%=Models,NTamd64,NTamd64.6.0
+
+[Models.NTamd64]
+%LPTENUM\CNC.DeviceDesc%=CNCInstall,USB\VID_04A9&PID_2773&MI_00
+%LPTENUM\CNC.DeviceDesc%=CNCInstallNet,CANON_MFNP&%CNCRFN%
+
+[Models.NTamd64.6.0]
+%LPTENUM\CNC.DeviceDesc%=CNCInstall_VISTA,USB\VID_04A9&PID_2773&MI_00
+%LPTENUM\CNC.DeviceDesc%=CNCInstallNet_VISTA,CANON_MFNP&%CNCRFN%
+
+
+;........................................ WinXP(64-bit) section
+[CNCInstall.NTamd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=CNCDeviceData
+AddReg=CNCAddreg,CNCAddreg_XP,CNCAddreg.USB,CNCUSDAddreg
+CopyFiles=WiaFiles,CNCDsFiles,CNCDsCommonFilesXP,ColorFiles.NT,MPScanLLD,CNCMediaFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+; used for push button event
+Capabilities=0x11
+Events=PushButton.Events
+DriverVer=02/24/2013, 11.3.0.0
+FriendlyName=%CNC.FriendlyName%
+
+[CNCInstall.NTamd64.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+;........................................ WinVista(64-bit) section
+[CNCInstall_VISTA.NTamd64]
+Include=sti.inf
+Needs=STI.USBSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=CNCDeviceData_VISTA
+AddReg=CNCAddreg,CNCAddreg_VISTA,CNCAddreg.USB,CNCUSDAddreg,CNCUSDAddreg_VISTA
+CopyFiles=Wia2Files,CNCDsFiles,CNCDsCommonFiles,ColorFiles.NT,MPScanLLD,CNCMediaFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+; used for push button event
+Capabilities=0x11
+Events=PushButton.Events
+DriverVer=02/24/2013, 11.3.0.0
+FriendlyName=%CNC.FriendlyName%
+
+[CNCInstall_VISTA.NTamd64.Services]
+Include=sti.inf
+Needs=STI.USBSection.Services
+
+;........................................ WinXP(64-bit) section(Network)
+[CNCInstallNet.NTamd64]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=CNCDeviceData
+AddReg=CNCAddreg,CNCAddreg_XP,CNCUSDAddreg
+CopyFiles=WiaFiles,CNCDsFiles,CNCDsCommonFilesXP,ColorFiles.NT,MPScanLLD,CNCMediaFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+; used for push button event
+Capabilities=0x11
+Events=PushButton.Events
+DriverVer=02/24/2013, 11.3.0.0
+FriendlyName=%CNC.FriendlyName%
+
+[CNCInstallNet.NTamd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+;........................................ WinVista(64-bit) section(Network)
+[CNCInstallNet_VISTA.NTamd64]
+Include=sti.inf
+Needs=STI.SerialSection
+SubClass=StillImage
+DeviceType=1
+DeviceSubType=0x1
+DeviceData=CNCDeviceData_VISTA
+AddReg=CNCAddreg,CNCAddreg_VISTA,CNCUSDAddreg,CNCUSDAddreg_VISTA
+CopyFiles=Wia2Files,CNCDsFiles,CNCDsCommonFiles,ColorFiles.NT,MPScanLLD,CNCMediaFiles
+ICMProfiles="sRGB Color Space Profile.icm"
+; used for push button event
+Capabilities=0x11
+Events=PushButton.Events
+DriverVer=02/24/2013, 11.3.0.0
+FriendlyName=%CNC.FriendlyName%
+
+[CNCInstallNet_VISTA.NTamd64.Services]
+Include=sti.inf
+Needs=STI.SerialSection.Services
+
+
+;.......................................... Common Section
+[PushButton.Events]
+PushButtonPushed1=%PushButtonPushed1%,{68AD7BE0-DB63-49ea-AF4A-C052F16246F7},%ButtonApp%
+PushButtonPushed2=%PushButtonPushed2%,{8698F7D1-797E-428a-8F27-FAF7CE08CECE},%ButtonApp%
+PushButtonPushed3=%PushButtonPushed3%,{C61B2101-3920-409e-A558-B27A5B284755},%ButtonApp%
+PushButtonPushed4=%PushButtonPushed4%,{D92098C1-2A01-4d93-B0F9-18970F68535B},%ButtonApp%
+
+[ColorFiles.NT]
+CNZ005.ICC
+CNFR16.ICC
+
+[CNCDeviceData]
+TwainDS=%CNC.TwainDS%
+SpecialInfo=%CNC.SPInfo%
+DeviceKey=%CNCRFN%
+InstallDirectory="CanonMF\%CNCRFN%\"
+KeyNamePath=%KEYNAME%
+DefaultKeyNamePath=%DEFAULTKEYNAME%
+
+[CNCDeviceData_VISTA]
+TwainDS=%CNC.TwainDS%
+SpecialInfo=%CNC.SPInfo%
+DeviceKey=%CNCRFN%
+InstallDirectory="Program Files\Canon\CanonMF\%CNCRFN%\"
+KeyNamePath=%KEYNAME%
+DefaultKeyNamePath=%DEFAULTKEYNAME%
+UI Class ID={03B0F985-8719-4514-837F-FBED7ABAAE5E}
+;The above GUID reused from sample MUST change for each Model.
+
+[CNCAddreg]
+HKLM,"%SGDKEY%","DeviceName",,%CNC.MDL%
+HKLM,"%SGDKEY%","SeriesName",,%CNC.SRS%
+HKLM,"%SGDKEY%","Manufacturer",,"Canon Inc."
+HKLM,"%SGDKEY%","ProductFamily",,"TWAIN Scanners"
+HKLM,"%SGDKEY%","ProductName",,%CNC.MDL%
+HKLM,"%SGDKEY%","InstallDirectory",,"%10%\TWAIN_32\%CNCRFN%\"
+HKLM,"%SGDKEY%","DeviceDriver",,"SCANINTF.DLL"
+HKLM,"%SGDKEY%","ProductId",,"MF4800          "
+HKLM,"%SGDKEY%","DataSourcePath",,"%10%\TWAIN_32\%CNCRFN%\cisds.ds"
+HKLM,"%SGDKEY%","TextEnhance",0x00010001,0
+HKLM,"%SGDKEY%","HiDefinitionMode",0x00010001,0
+HKLM,"%SGDKEY%","AutoPreview",0x00010001,0
+HKLM,"%SGDKEY%","AutoClose",0x00010001,0
+HKLM,"%SGDKEY%","SavePreview",0x00010001,1
+HKLM,"%SGDKEY%","DriverDate",,"12 2012"
+HKLM,"%SGDKEY%","DriverVersion",,"11.3.0.0.mf17a"
+HKLM,"%SGDKEY%","ColorGear",,%CNC.ColorGear%
+HKLM,"%SGDKEY%","ColorMatch Platen",,"CNFR16.ICC"
+HKLM,"%SGDKEY%","SGIPPDEF",,"CNCFR16.DAT"
+HKLM,"%SGDKEY%","Descreen",0x00010001,0
+HKLM,"%SGDKEY%","Unsharp",0x00010001,3
+HKLM,"%SGDKEY%","MultiLimitThreshold",0x00010001,180
+HKLM,"%SGDKEY%","MultiJackUp",0x00010001,9
+HKLM,"%SGDKEY%","MultiTrimJackUp",0x00010001,20
+HKLM,"%SGDKEY%","CardPhotoDistThr",0x00010001,30
+HKLM,"%SGDKEY%","PhotoTrimThr",0x00010001,210
+HKLM,"%SGDKEY%","PhotoRThr",0x00010001,210
+HKLM,"%SGDKEY%","PhotoGThr",0x00010001,210
+HKLM,"%SGDKEY%","PhotoBThr",0x00010001,210
+HKLM,"%SGDKEY%","CardTrimThr",0x00010001,30
+HKLM,"%SGDKEY%","CardRThr",0x00010001,30
+HKLM,"%SGDKEY%","CardGThr",0x00010001,30
+HKLM,"%SGDKEY%","CardBThr",0x00010001,30
+HKLM,"%SGDKEY%","ParWhiteBlackEth",0x00010001,5
+HKLM,"%SGDKEY%","ParWhiteBlackEthDG",0x00010001,5
+HKLM,"%SGDKEY%","ParWhiteBlackSth",0x00010001,35
+HKLM,"%SGDKEY%","ParWhiteBlackVth",0x00010001,10
+HKLM,"%SGDKEY%","ParLabelingHth",0x00010001,30
+HKLM,"%SGDKEY%","ParLabelingLeft",0x00010001,1
+HKLM,"%SGDKEY%","ParLabelingTop",0x00010001,1
+HKLM,"%SGDKEY%","ParLabelingRight",0x00010001,1
+HKLM,"%SGDKEY%","ParLabelingBottom",0x00010001,1
+HKLM,"%SGDKEY%","DT_Left",,"10"
+HKLM,"%SGDKEY%","DT_Top",,"0"
+HKLM,"%SGDKEY%","DT_Width"	,,"1.5"
+HKLM,"%SGDKEY%","DT_Length",,"4.5"
+HKLM,"%SGDKEY%","DT_Border_1",,"2.5"
+HKLM,"%SGDKEY%","DT_Border_2",,"3.5"
+HKLM,"%SGDKEY%","DT_BkTh",,"18"
+HKLM,"%SGDKEY%","DT_MinWhThr",,"15"
+HKLM,"%SGDKEY%","DT_MaxWhThr",,"45"
+HKLM,"%SGDKEY%","ButtonNum",0x00010001,4
+HKLM,"%STIKEY%","MF4800",0x00010001,1
+
+[CNCAddreg_XP]
+HKLM,"%SGDKEY%","CommonModuleDirectory",,"%24%\CanonMF\%CNCRFN%\"
+
+[CNCAddreg_VISTA]
+HKLM,"%SGDKEY%","CommonModuleDirectory",,"%16422%\Canon\CanonMF\%CNCRFN%\"
+
+[CNCAddreg.USB]
+HKLM,"%SGDKEY%","AvailableDriver",0x00010001,1
+
+[CNCUSDAddreg]
+HKLM,"%WIASGDKEY%","ColorMatch",0x00010001,1
+HKLM,"%WIASGDKEY%","ColorGear",,"%CNC.ColorGear%"
+HKLM,"%WIASGDKEY%","TextEnhance",0x00010001,0
+HKLM,"%WIASGDKEY%","Descreen",0x00010001,0
+HKLM,"%WIASGDKEY%","UnsharpMask",0x00010001,0
+HKLM,"%WIASGDKEY%","HiDefinitionMode",0x00010001,0
+HKLM,"%WIASGDKEY%","ProductId",,"MF4800          "
+HKLM,"%WIASGDKEY%","ButtonNum",0x00010001,4
+HKLM,"%WIASGDKEY%","DspGamma",0x00010001,1
+HKLM,"%WIASTIKEY%","MF4800",0x00010001,1
+HKR,,USDClass,,"{8520940E-9E7B-44cf-B501-65D44C7C3A1E}"
+HKCR,CLSID\{8520940E-9E7B-44cf-B501-65D44C7C3A1E},,,"Canon USD"
+HKCR,CLSID\{8520940E-9E7B-44cf-B501-65D44C7C3A1E}\InProcServer32,,,%11%\CNCC4800.DLL
+HKCR,CLSID\{8520940E-9E7B-44cf-B501-65D44C7C3A1E}\InProcServer32,ThreadingModel,,"Both"
+;  The above GUID is specific to MF4800 and MUST change for a different model.
+
+[CNCUSDAddreg_VISTA]
+HKCR,CLSID\{03B0F985-8719-4514-837F-FBED7ABAAE5E},,,"WIA Driver UI Extension"
+HKCR,CLSID\{03B0F985-8719-4514-837F-FBED7ABAAE5E}\shellex\ImageProcessingFilter\{42A481ED-48CB-4329-86D1-6162BCDA0F54}
+;  The above GUID is specific to MF4800 and MUST change for a different model.
+
+HKCR,CLSID\{42A481ED-48CB-4329-86D1-6162BCDA0F54},,,"Canon Image Processing Filter"
+HKCR,CLSID\{42A481ED-48CB-4329-86D1-6162BCDA0F54}\InProcServer32,,,%11%\CNCE4800.dll
+HKCR,CLSID\{42A481ED-48CB-4329-86D1-6162BCDA0F54}\InProcServer32,ThreadingModel,,"Both"
+;  The above GUID is specific to MF4800 and MUST change for a different model.
+
+[WiaFiles]
+CNCC4800.DLL
+CNCI4800.DLL
+CNCL4800.DLL
+
+[Wia2Files]
+CNCC4800.DLL
+CNCI4800.DLL
+CNCL4800.DLL
+CNCE4800.DLL
+
+[CNCDsFiles]
+CISDS.DS
+SGUI.DLL
+SGUI_RES.DLL
+IOP.DLL
+ITLIB32.DLL
+SCANINTF.DLL
+TPM.DLL
+CNCFR16.DAT
+MC2.TXT
+JDA_CIMG.DLL
+NBS4MB.DLL
+NBSCOR4M.DLL
+RMSLANTC.DLL
+RSTCOL.DLL
+
+[CNCDsCommonFilesXP]
+WIARES.DLL
+SGCFLTR.dll
+SGCFLTR6.dll
+
+[CNCDsCommonFiles]
+WIARES.DLL
+SGCFLTR.dll
+SGCFLTR6.dll
+
+[MPScanLLD]
+CNCMFP44.INI,,,0x20
+CNCLSI44a.DLL,,,0x20
+CNCLSD44a.DLL,,,0x20
+CNCLSC44a.DLL,,,0x20
+CNCLST44a.DLL,,,0x20
+CNCLSU44a.DLL,,,0x20
+
+[CNCMediaFiles]
+CSSAMP1.MID
+
+;-------------------------------Source Index
+[SourceDisksFiles]
+CNZ005.ICC=1
+ITLIB32.DLL=1
+JDA_CIMG.DLL=1
+NBS4MB.DLL=1
+NBSCOR4M.DLL=1
+RMSLANTC.DLL=1
+RSTCOL.DLL=1
+
+CISDS.DS=1
+SGUI.DLL=1
+IOP.DLL=1
+SCANINTF.DLL=1
+TPM.DLL=1
+SGCFLTR.dll=1
+SGCFLTR6.dll=1
+
+SGUI_RES.DLL=1
+WIARES.DLL=1
+
+CSSAMP1.MID=1
+
+CNCFR16.DAT=1
+CNFR16.ICC=1
+
+MC2.TXT=1
+
+CNCC4800.DLL=1
+CNCI4800.DLL=1
+CNCL4800.DLL=1
+CNCE4800.DLL=1
+
+CNCMFP44.INI=1
+CNCLSI44a.DLL=1
+CNCLSD44a.DLL=1
+CNCLSC44a.DLL=1
+CNCLST44a.DLL=1
+CNCLSU44a.DLL=1
+
+[SourceDisksNames]
+1=%D1%,scan.cab,
+
+;-------------------------------String Aliases
+[Strings]
+Msft="Canon"
+Mfg="Canon"
+SGDKEY="Software\Wow6432Node\Canon\SateraMFP1\ScanGear\11.3\Devices\MF4800"
+STIKEY="Software\Wow6432Node\Canon\SateraMFP1\ScanGear\STI"
+DEFAULTKEYNAME="Software\Wow6432Node\Canon\SateraMFP1\Toolbox Ver4.9\Devices\"
+KEYNAME="\Software\Canon\MFToolbox\"
+WIASGDKEY="Software\Canon\SateraMFP1\WIA\3.0\Devices\MF4800"
+WIASTIKEY="Software\Canon\SateraMFP1\WIA\STI"
+D1="Canon MF4800 Series Setup Disk"
+LPTENUM\CNC.DeviceDesc="Canon MF4800 Series"
+ButtonApp        = "MF Toolbox Ver4.9"
+CNCRFN           = "MF4800"
+CNC.MDL          = "Canon MF4800"
+CNC.SRS          = "Canon MF4800 Series"
+CNC.DeviceDesc   = "Canon MF4800"
+CNC.SPInfo       = "Canon MF4800 Scanner"
+CNC.TwainDS      = "Canon MF4800 Series"
+CNC.ColorGear    = "FR16"
+PushButtonPushed1= "Color Scan"
+PushButtonPushed2= "B&W Scan"
+PushButtonPushed3= "Custom 1"
+PushButtonPushed4= "Custom 2"
+CNC.FriendlyName     = "WIA Canon MF4800 Series"
+

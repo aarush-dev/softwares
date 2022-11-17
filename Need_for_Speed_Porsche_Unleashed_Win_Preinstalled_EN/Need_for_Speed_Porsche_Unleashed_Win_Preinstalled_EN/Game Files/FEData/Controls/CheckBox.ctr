@@ -1,0 +1,74 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;
+; CheckBox
+;
+; Click on the checkBoxPic and the value changes (we may want to change it so
+; it's just if you click the item in general, which is actually a simpiler case).
+;
+; Created by Gary Steinke, May 21/99
+;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+[control]
+id=NFS5.CheckBox
+description=Check Box
+
+parts=checkBoxPic,data
+
+name.value=ID_CheckBox
+
+states=normal,hidden,selected
+states.flags=0
+
+size.value=100,60
+size.flags=0
+moveable.value=1
+moveable.flags=HIDDEN|READONLY
+resizeable.value=1
+resizeable.flags=HIDDEN|READONLY
+pos=0,0
+pos.label=control.pos
+
+autosize.value=1
+autosize.flags=HIDDEN|READONLY
+
+
+[state.normal]
+parts=checkBoxPic,data
+
+[state.selected]
+parts=checkBoxPic,data
+
+[state.hidden]
+parts=data
+
+
+
+[part.data]
+id=DATA
+attributes.value=boolAccessor,onIndex,offIndex,transon,transoff
+transon.type=STRING
+transon.value=FADE
+transon.label=Transition On
+transon.flags=0
+transoff.type=STRING
+transoff.value=SAME
+transoff.label=Transition Off
+
+boolAccessor.type=STRING
+boolAccessor.value=put_value_here
+onIndex.type=INT
+onIndex.value=0
+offIndex.type=INT
+offIndex.value=1
+
+[part.checkBoxPic]
+id=SHAPE
+pos.value=0,0
+pos.flags=HIDDEN|READONLY
+size.flags=HIDDEN|READONLY
+shapePathName.value=pointer.fsh
+shapePathName.flags=0
+shapeIndex.value=data.onIndex
+shapeIndex.flags=HIDDEN|READONLY
+

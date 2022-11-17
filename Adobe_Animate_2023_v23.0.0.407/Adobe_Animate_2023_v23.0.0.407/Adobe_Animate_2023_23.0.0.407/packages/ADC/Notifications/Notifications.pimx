@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>60324724-64E4-4842-B30A-93B9C6E5C7FC</packageid>
+	<name>Notifications</name>
+	<version>5.8.0.592</version>
+	<target_location>/Notifications/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Notifications</name>
+			<assets_size>9465656</assets_size>
+			<applet_registration_info>
+				<applet_registration_element>
+					<name>ANSClient</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/Notifications/ANSClient.dll</module_path>
+					<display_name>ANSClient</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>NotificationManager</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/Notifications/NotificationManager.dll</module_path>
+					<display_name>Notification Manager</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>TrayNotificationManager</name>
+					<type>CoreExt</type>
+					<version>1.0</version>
+					<module_path>/Notifications/TrayNotificationManager.dll</module_path>
+					<display_name>Tray Notification Manager</display_name>
+				</applet_registration_element>
+				<applet_registration_element>
+					<name>HomePanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<module_path>/Notifications/HomePanelBL.dll</module_path>
+					<display_name>HomePanel Applet BL Element</display_name>
+				</applet_registration_element>
+			</applet_registration_info>
+			<applet_relationship_info>
+				<applet_relationship_element>
+					<name>HomePanel</name>
+					<type>BL</type>
+					<version>1.0</version>
+					<relationship>PanelOf</relationship>
+					<relative_name>C3Container</relative_name>
+					<relative_type>BL</relative_type>
+					<relative_version>1.0</relative_version>
+					<relative_order>1000</relative_order>
+				</applet_relationship_element>
+			</applet_relationship_info>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+QU5TQ2xpZW50LmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRhbFNpZ25hdHVy
+ZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGlnaUNlcnQgVHJ1
+c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7fH1EaWdpQ2VydCBU
+cnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+SG9tZVBhbmVsQkwuZGxsPC9JbnN0YWxsUGF0aD48U2lnbmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0
+dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZvPkFkb2JlIEluYy57fH1EaWdpQ2VydCBU
+cnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNIQTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0
+IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48L0ZpbGU+PEZpbGU+PEluc3RhbGxQYXRo
+PlxOb3RpZmljYXRpb25NYW5hZ2VyLmRsbDwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGln
+aXRhbFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9
+RGlnaUNlcnQgVHJ1c3RlZCBHNCBDb2RlIFNpZ25pbmcgUlNBNDA5NiBTSEEzODQgMjAyMSBDQTF7
+fH1EaWdpQ2VydCBUcnVzdGVkIFJvb3QgRzQ8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJ
+bnN0YWxsUGF0aD5cVHJheU5vdGlmaWNhdGlvbk1hbmFnZXIuZGxsPC9JbnN0YWxsUGF0aD48U2ln
+bmF0dXJlVHlwZT5EaWdpdGFsU2lnbmF0dXJlPC9TaWduYXR1cmVUeXBlPjxTaWduYXR1cmVJbmZv
+PkFkb2JlIEluYy57fH1EaWdpQ2VydCBUcnVzdGVkIEc0IENvZGUgU2lnbmluZyBSU0E0MDk2IFNI
+QTM4NCAyMDIxIENBMXt8fURpZ2lDZXJ0IFRydXN0ZWQgUm9vdCBHNDwvU2lnbmF0dXJlSW5mbz48
+L0ZpbGU+PC9WYWxpZGF0aW9uSW5mbz4=</validation_xml>
+				<sig>vSOObGd7IV4pTGHrPWLL/gH+M4plVjd0zjhHOu3Y61jyyJlUVX0jHP4enjc2itR884CpuWsl3iHmfC/Gadm1aqe5avm62T9/jvWkaoIY2MIftsht2WTQ1fIjOIb3g+KcXlvEZ+SNDIaxO2GS9xlcm+7pPlPWNQ4MjpCaJjJDdpULhwQS+v3xtphVrPXmon5XI253Vwltl0RAIrjKHPxprI0r37W2sGZbgLGlEf9ZA5H9FFcArTgJ0vzkqqJyuIi1CzxNZoXslBRNoBWfdi2OsKQ/6T7ExvKduA5ESk/bbdiWC7lCMz88T/H1JNBHVvnA7ReHKzkchHwa7mVNtE5yJD7zHYWJm6/TkxKFA8FDwxcqbxFXwWvyDcUAI94105aVM7fQs7rhhfsp1jEsRxS2sy4AhXyXgs9lBtKIrhFcnT2zoMHRnll7bH29usRvzke8F8gAQ7o7rt3aKyRvg+f/9xaCgHHCbbuhGWyAHn2BqKquOk0KsEUk2PYE5X7WsQHA</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

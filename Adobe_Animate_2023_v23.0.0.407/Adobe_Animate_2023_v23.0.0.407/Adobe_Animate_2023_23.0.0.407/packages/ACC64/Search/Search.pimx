@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>A0D3F00A-46AD-4D15-99BC-22BFA5B3E9C7</packageid>
+	<name>Search</name>
+	<version>5.8.0.592</version>
+	<target_location>/Components/Search/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>Search</name>
+			<assets_size>4622291</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvLz4=</validation_xml>
+				<sig>cN6XnzatYWpVMvB0KSNhofBSJBr1fEFRgqUIP0VK3u+YURCvejAvatqKYXsB4ctjKqOXdabsumCwPN6/9tLGrNOOo92S2lob5QXVaREoqrJx4XK17YLDLGdE64+uooFO/usltEMgO50xsfipA4x/F2ZoQzAhHb1yEd7g6C9BBIc1jMH5ZgjD5m0nQvmxmYC4RPfvn3QxUpAJpC8KjwJtcrpJaSwkMXVfs10dR57ibjWictdWEaYbqplnm8e2TLNnVEvMCa/x8Q6hsiCSn3tbqBYA3mM7Sf4MVuyVl20Zd7Z7gVqnI44+uLHAjKOhf3YvGXEiUZlToRmDugo07GHhH+F+ShyXpzSTxZr+4tAXclJlFsJ0U96SMT3GG5Qd+ExgUWz3CgrLNPpG3QuIO8Sy0yOJes8ABRiy9WSKdImse93vZjWebwFdh+97CMQcUEuhk+mugca92SV3aToW9YA6D7NwVBwSO8IC7LHdPtfZPUY9hVsO3RoTgNaY5rYbYkao</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>

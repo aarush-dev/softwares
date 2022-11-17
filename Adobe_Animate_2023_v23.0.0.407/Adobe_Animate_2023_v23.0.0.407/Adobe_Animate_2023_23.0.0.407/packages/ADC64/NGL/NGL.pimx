@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package_installation_info version="2.0">
+	<packageid>73EA6AF5-8408-4C7E-8543-243543B38A86</packageid>
+	<name>NGL</name>
+	<version>5.8.0.541</version>
+	<target_location>/NGL/</target_location>
+	<packages>
+		<pimaInfo>
+			<packagetype>zip</packagetype>
+			<name>NGL</name>
+			<assets_size>132496195</assets_size>
+			<validation_info><validation_xml>PD94bWwgdmVyc2lvbj0iMS4wIj8+PFZhbGlkYXRpb25JbmZvPjxGaWxlPjxJbnN0YWxsUGF0aD5c
+YWRvYmVfbGljZW5zaW5nX3dmLmV4ZTwvSW5zdGFsbFBhdGg+PFNpZ25hdHVyZVR5cGU+RGlnaXRh
+bFNpZ25hdHVyZTwvU2lnbmF0dXJlVHlwZT48U2lnbmF0dXJlSW5mbz5BZG9iZSBJbmMue3x9RGln
+aUNlcnQgRVYgQ29kZSBTaWduaW5nIENBIChTSEEyKXt8fURpZ2lDZXJ0IEhpZ2ggQXNzdXJhbmNl
+IEVWIFJvb3QgQ0E8L1NpZ25hdHVyZUluZm8+PC9GaWxlPjxGaWxlPjxJbnN0YWxsUGF0aD5cYWRv
+YmVfbGljZW5zaW5nX3dmX2hlbHBlci5leGU8L0luc3RhbGxQYXRoPjxTaWduYXR1cmVUeXBlPkRp
+Z2l0YWxTaWduYXR1cmU8L1NpZ25hdHVyZVR5cGU+PFNpZ25hdHVyZUluZm8+QWRvYmUgSW5jLnt8
+fURpZ2lDZXJ0IEVWIENvZGUgU2lnbmluZyBDQSAoU0hBMil7fH1EaWdpQ2VydCBIaWdoIEFzc3Vy
+YW5jZSBFViBSb290IENBPC9TaWduYXR1cmVJbmZvPjwvRmlsZT48L1ZhbGlkYXRpb25JbmZvPg==</validation_xml>
+				<sig>ZAWB+W8s6EbndjatBkZoLjX2epys2WlItMPSudY4AuIVd6gAvvktc/QH3qVp++/NUi+rb02JSqZ9frVuekbwCyi2pCMpkIWf+BKDRVkwegpr1f5qnOYf6LXDg5pjqv6fJ4Ipg5H4xwUBYRj9SggGtAkMgTNnyNuEoVWyCqyKz9msuNPF4t4nnd2TiC1oByKDHqtwaq78l3b/lOG3FvXnWTUPZaeuT7p2EboDl0bAagNHzpJMZePhkIaeuuR2JkFTpzqu728/gPVKnI1DLQLVlHYxRVfDIDUAOnOmeWpNwzAQtiG/NfmocIGRgILe8SzeUvdmkEC8ImKLBUxtpXFmX20lxGYM6asuH1Si6jGUdXA2hKfFH9sA9yqzirhqiNUj4U6fJUs2/tMvLkpHM4WJAWZB+X8Smfks1JPEzyA0PMebLBdzw8yW4t5TWxc+3vZzA+tUDPd0B+xQpEOK6h+6o3KsKDn3pFJkkmPiqtDe9+VYXxxU9FHwtYhTVuCGyuz8</sig>
+			</validation_info>
+		</pimaInfo>
+	</packages>
+</package_installation_info>
